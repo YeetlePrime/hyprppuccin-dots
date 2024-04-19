@@ -9,6 +9,9 @@ These are my personal dotfiles for my personal daily driver linux machine.
 - sddm (enable with `systemctl enable sddm`)
 - zsh
 
+TODO: Add sddm theme in /usr/share/sddm/themes
+TODO: Add sddm config to /etc/sddm.conf.d/sddm.conf
+
 ## Installation
 1. Install all the listed dependencies
 1. Clone the repository `git clone --recurse-submodules --remote-submodules https://github.com/YeetlePrime/hyprppuccin-dots`
