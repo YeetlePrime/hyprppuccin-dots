@@ -1,6 +1,16 @@
 # Hyprppuccin
 These are my personal dotfiles for my personal daily driver linux machine.
 
+## Used softare
+- Display System: [wayland](https://wayland.freedesktop.org/) 
+- Display/Login Manager: [sddm](https://github.com/sddm/sddm)
+- Window Manager: [hyprland](https://hyprland.org/)
+- Wallpaper Daemon: [swww](https://hyprland.org/)
+- Statusbar: [waybar](https://github.com/Alexays/Waybar)
+- Editor: [neovim](https://github.com/neovim/neovim)
+- Shell: [zsh](https://wiki.archlinux.org/title/zsh)
+- Terminal: [kitty](https://github.com/kovidgoyal/kitty)
+
 ## Dependencies
 - hyprland (install hyprland with nvidia method, if you have a nvidia gpu)
 - swww
