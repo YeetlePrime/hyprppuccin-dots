@@ -1,0 +1,11 @@
+hyprland
+sddm
+qt6ct
+lz4
+npm
+ripgrep
+neovim
+unzip
+waybar
+zsh
+kitty
