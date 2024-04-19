@@ -6,6 +6,7 @@ These are my personal dotfiles for my personal daily driver linux machine.
 - swww
 - nvim (or any other editor)
 - kitty
+- sddm (enable with `systemctl enable sddm`)
 - zsh
 
 ## Installation

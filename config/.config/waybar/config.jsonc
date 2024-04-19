@@ -15,7 +15,7 @@
     "passthrough": false,
     "gtk-layer-shell": true,
 
-    "modules-left": ["custom/l_end","custom/power","custom/r_end","custom/l_end","wlr/taskbar","custom/spotify","custom/r_end","","custom/padd"],
+    "modules-left": ["custom/padd", "custom/l_end","custom/power","custom/r_end","custom/l_end","hyprland/workspaces","custom/spotify","custom/r_end","","custom/padd"],
     "modules-center": ["custom/padd","custom/l_end","idle_inhibitor","clock","custom/r_end","custom/padd"],
     "modules-right": ["custom/padd","custom/l_end","tray","battery","custom/r_end","custom/l_end","backlight","network","bluetooth","pulseaudio","pulseaudio#microphone","custom/keybindhint","custom/r_end","custom/padd"],
 
@@ -27,67 +27,31 @@
         "interval" : 86400, // once every day
         "tooltip": true
     },
-
-    "custom/cliphist": {
-        "format": "{}",
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "disable-scroll": true,
         "rotate": 0,
-        "exec": "echo ; echo 󰅇 clipboard history",
-        "on-click": "sleep 0.1 && cliphist.sh c",
-        "on-click-right": "sleep 0.1 && cliphist.sh d",
-        "on-click-middle": "sleep 0.1 && cliphist.sh w",
-        "interval" : 86400, // once every day
-        "tooltip": true
+        "all-outputs": true,
+        "active-only": false,
+        "on-click": "activate",
+        "persistent-workspaces": {}
     },
-
-    "custom/wbar": {
-        "format": "{}", //    //
-        "rotate": 0,
-        "exec": "echo ; echo  switch bar //  dock",
-        "on-click": "wbarconfgen.sh n",
-        "on-click-right": "wbarconfgen.sh p",
-        "on-click-middle": "sleep 0.1 && quickapps.sh kitty firefox spotify code dolphin",
-        "interval" : 86400,
-        "tooltip": true
+    "wlr/taskbar": {
+            "format": "{icon}",
+            "rotate": 0,
+            "icon-size": 18,
+            "icon-theme": "Tela-circle-dracula",
+    "spacing": 0,
+            "tooltip-format": "{title}",
+            "on-click": "activate",
+            "on-click-middle": "close",
+            "ignore-list": [
+                    "Alacritty"
+            ],
+            "app_ids-mapping": {
+                    "firefoxdeveloperedition": "firefox-developer-edition"
+            }
     },
-
-    "custom/theme": {
-        "format": "{}",
-        "rotate": 0,
-        "exec": "echo ; echo 󰟡 switch theme",
-        "on-click": "themeswitch.sh -n",
-        "on-click-right": "themeswitch.sh -p",
-        "on-click-middle": "sleep 0.1 && themeselect.sh",
-        "interval" : 86400, // once every day
-        "tooltip": true
-    },
-
-    "custom/wallchange": {
-        "format": "{}",
-        "rotate": 0,
-        "exec": "echo ; echo 󰆊 switch wallpaper",
-        "on-click": "swwwallpaper.sh -n",
-        "on-click-right": "swwwallpaper.sh -p",
-        "on-click-middle": "sleep 0.1 && swwwallselect.sh",
-        "interval" : 86400, // once every day
-        "tooltip": true
-    },
-
-	"wlr/taskbar": {
-		"format": "{icon}",
-		"rotate": 0,
-		"icon-size": 18,
-		"icon-theme": "Tela-circle-dracula",
-        "spacing": 0,
-		"tooltip-format": "{title}",
-		"on-click": "activate",
-		"on-click-middle": "close",
-		"ignore-list": [
-			"Alacritty"
-		],
-		"app_ids-mapping": {
-			"firefoxdeveloperedition": "firefox-developer-edition"
-		}
-	},
 
     "custom/spotify": {
         "exec": "/usr/bin/env python3 ~/.config/waybar/modules/mediaplayer.py --player spotify",
