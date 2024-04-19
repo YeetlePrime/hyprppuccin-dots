@@ -1,5 +1,5 @@
-source ~/.zsh/catpuccin_mocha-zsh-syntax-highlighting.zsh
-source ~/path/to/fsh/fast-syntax-highlighting.plugin.zsh
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source ~/cloned/fsh/fast-syntax-highlighting.plugin.zsh
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
