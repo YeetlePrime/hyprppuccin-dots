@@ -9,3 +9,4 @@ unzip
 waybar
 zsh
 kitty
+dolphin
