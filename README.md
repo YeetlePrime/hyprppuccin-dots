@@ -10,7 +10,7 @@ These are my personal dotfiles for my personal daily driver linux machine.
 
 ## Installation
 1. Install all the listed dependencies
-1. Clone the repository `git clone https://github.com/YeetlePrime/hyprppuccin-dots`
+1. Clone the repository `git clone --recurse-submodules --remote-submodules https://github.com/YeetlePrime/hyprppuccin-dots`
 1. Move into repository `cd hyprppuccin-dots`
 1. Backup your current config directory `cp -r ~/.config ~/.config.bak`
 1. Copy config files `cp -r config/.config/* ~/.config`
