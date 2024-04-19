@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="" width="100" alt="Catppuccin-Logo"/><br/>
+    <img src="https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/catppuccin.png" width="100" alt="Catppuccin-Logo"/><br/>
     Hyprppuccin
 </h1>
 These are my personal dotfiles for my personal daily driver linux machine.
