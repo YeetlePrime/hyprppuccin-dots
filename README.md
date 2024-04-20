@@ -15,6 +15,9 @@ It is my goal to create a simple hyprland user-experience that is easy to instal
 - Shell: [zsh](https://wiki.archlinux.org/title/zsh)
 - Terminal: [kitty](https://github.com/kovidgoyal/kitty)
 - File Manager: [dolphin](https://apps.kde.org/de/dolphin/)
+- Soundserver: [pulseaudio](https://wiki.archlinux.org/title/PulseAudio)
+- LogoutMenu: [wlogout](https://github.com/ArtsyMacaw/wlogout)
+- Session Lock: [swaylock-effects](https://github.com/mortie/swaylock-effects)
 
 ## Installation
 1. Install all the listed dependencies
@@ -46,6 +49,12 @@ This is still a work in progress. Configuration can be found at `~/.config/kitty
 
 ### Dolphin (File Manager)
 This is very much a work in progress and barely customized.
+
+### wlogout (Logout Menu)
+User specific configuration can be found at `~/.config/wlogout`. Global configuration can be found at `/etc/wlogout`.
+
+### swaylock-effects (Session Lock)
+Config can be found at `~/.config/swaylock/config`.
 
 ## TODOs
 - Add automatic dependency installation to the install script (at least for pacman packages)

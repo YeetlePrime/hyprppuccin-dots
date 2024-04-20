@@ -27,6 +27,12 @@ cp -r "${homedir}/.config/qt6ct" "${configdir}/.config"
 # dolphin
 cp "${homedir}/.config/dolphinrc" "${configdir}/.config"
 
+# wlogout
+cp -r "${homedir}/.config/wlogout" "${configdir}/.config"
+
+# swaylock-effects
+cp -r "${homedir}/.config/swaylock" "${configdir}/.config"
+
 # sddm config and theme
 cp "/etc/sddm.conf.d/sddm.conf" "${configdir}/sddm"
 cp -r "/usr/share/sddm/themes/sddm-astronaut-theme" "${configdir}/sddm/themes"

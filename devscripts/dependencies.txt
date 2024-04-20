@@ -10,3 +10,7 @@ waybar
 zsh
 kitty
 dolphin
+pulseaudio
+pamixer
+wlogout
+swaylock-effects
