@@ -68,3 +68,4 @@ Config can be found at `~/.config/swaylock/config`.
 - Customize wlogout looks
 - Complete wlogout functionality
 - Add starship customizations to zsh
+- Add NerdFont (Cascaydia Mono)
