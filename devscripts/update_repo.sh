@@ -9,30 +9,30 @@ mkdir -p "${configdir}/.config"
 mkdir -p "${configdir}/sddm/themes"
 
 # zsh
-cp "${homedir}/.zshrc" "${configdir}"
-cp -r "${homedir}/.zsh" "${configdir}"
+cp -f "${homedir}/.zshrc" "${configdir}"
+cp -rf "${homedir}/.zsh" "${configdir}"
 
 # hyprland
-cp -r "${homedir}/.config/hypr" "${configdir}/.config"
+cp -rf "${homedir}/.config/hypr" "${configdir}/.config"
 
 # waybar
-cp -r "${homedir}/.config/waybar" "${configdir}/.config"
+cp -rf "${homedir}/.config/waybar" "${configdir}/.config"
 
 # kitty
-cp -r "${homedir}/.config/kitty" "${configdir}/.config"
+cp -rf "${homedir}/.config/kitty" "${configdir}/.config"
 
 # qt6ct
-cp -r "${homedir}/.config/qt6ct" "${configdir}/.config"
+cp -rf "${homedir}/.config/qt6ct" "${configdir}/.config"
 
 # dolphin
-cp "${homedir}/.config/dolphinrc" "${configdir}/.config"
+cp -f "${homedir}/.config/dolphinrc" "${configdir}/.config"
 
 # wlogout
-cp -r "${homedir}/.config/wlogout" "${configdir}/.config"
+cp -rf "${homedir}/.config/wlogout" "${configdir}/.config"
 
 # swaylock-effects
-cp -r "${homedir}/.config/swaylock" "${configdir}/.config"
+cp -rf "${homedir}/.config/swaylock" "${configdir}/.config"
 
 # sddm config and theme
-cp "/etc/sddm.conf.d/sddm.conf" "${configdir}/sddm"
-cp -r "/usr/share/sddm/themes/sddm-astronaut-theme" "${configdir}/sddm/themes"
+cp -f "/etc/sddm.conf.d/sddm.conf" "${configdir}/sddm"
+cp -rf "/usr/share/sddm/themes/sddm-astronaut-theme" "${configdir}/sddm/themes"

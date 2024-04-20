@@ -63,3 +63,4 @@ Config can be found at `~/.config/swaylock/config`.
 - Customize dolphin
 - Customize zsh
 - Add menu/application launcher (wofi, rofi or alike)
+- Complete wlogout functionality

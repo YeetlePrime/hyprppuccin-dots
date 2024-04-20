@@ -11,13 +11,13 @@ mkdir -p "/usr/share/sddm/themes"
 mkdir -p "/usr/share"
 
 # zsh
-cp "${configdir}/.zshrc" "${homedir}"
-cp -r "${configdir}/.zsh" "${homedir}"
+cp -f "${configdir}/.zshrc" "${homedir}"
+cp -rf "${configdir}/.zsh" "${homedir}"
 
 # copy all files from .config
-cp -r "${configdir}/.config/." "${homedir}/.config"
+cp -rf "${configdir}/.config/." "${homedir}/.config"
 
 # sddm config and theme
-cp "${configdir}/sddm/sddm.conf" "/etc/sddm.conf.d/sddm.conf"
-cp -r "${configdir}/sddm/themes/sddm-astronaut-theme" "/usr/share/sddm/themes/"
-cp -r "${configdir}/sddm/themes/sddm-astronaut-theme/Fonts/." "/usr/share/fonts"
+cp -f "${configdir}/sddm/sddm.conf" "/etc/sddm.conf.d/sddm.conf"
+cp -rf "${configdir}/sddm/themes/sddm-astronaut-theme" "/usr/share/sddm/themes/"
+cp -rf "${configdir}/sddm/themes/sddm-astronaut-theme/Fonts/." "/usr/share/fonts"
