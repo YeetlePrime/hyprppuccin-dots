@@ -3,7 +3,8 @@
     Hyprppuccin
 </h1>
 These are my personal dotfiles for my personal daily driver linux machine.
-It is my goal to create a simple hyprland user-experience that is easy to install (in the best case with only one script) in order to kickstart with a solid default installation, that can be further customized manually.
+It is my goal to create a simple hyprland user-experience that is easy to install (in the best case with only one script) in order to kickstart with a solid default installation, that can be further customized manually.  
+The theme is heavily inspired by the catppuccin hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots), but takes out a lot of the complexity with dynamic customization.
 
 ## Used softare
 - Display System: [wayland](https://wayland.freedesktop.org/) 
@@ -59,7 +60,7 @@ Config can be found at `~/.config/swaylock/config`.
 ## TODOs
 - Add automatic dependency installation to the install script (at least for pacman packages)
 - Extend the waybar with some basic functionality (Bluetooth, Network, Screenshots, Hardware stats)
-- Add logout functionality (pop-up to choose reboot/shutdown/lock/logout)
+- Add script for volumecontrol to waybar (has to use pamixer)
 - Customize dolphin
 - Customize zsh
 - Add menu/application launcher (wofi, rofi or alike)
