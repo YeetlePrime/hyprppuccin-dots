@@ -1,7 +1,8 @@
 <h1 align="center">
     <img src="https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/catppuccin.png" width="100" alt="Catppuccin-Logo"/><br/>
     Hyprppuccin
-</h1>
+</h1>  
+
 These are my personal dotfiles for my personal daily driver linux machine.
 It is my goal to create a simple hyprland user-experience that is easy to install (in the best case with only one script) in order to kickstart with a solid default installation, that can be further customized manually.  
 The theme is heavily inspired by the catppuccin hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots), but takes out a lot of the complexity with dynamic customization.
@@ -67,3 +68,5 @@ Config can be found at `~/.config/swaylock/config`.
 - Add menu/application launcher (wofi, rofi or alike)
 - Customize wlogout looks
 - Complete wlogout functionality
+- Add starship customizations to zsh
+- Add NerdFont (Cascaydia Mono)
