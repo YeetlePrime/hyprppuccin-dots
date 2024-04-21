@@ -1,8 +1,16 @@
 #!/bin/env sh
+
+# █░█ ▄▀█ █▀█ █▀
+# ▀▄▀ █▀█ █▀▄ ▄█
+
 homedir=$( getent passwd "$USER" | cut -d: -f6 )
 scriptdir="$(dirname $0)"
 repodir="${scriptdir}/.."
 configdir="${repodir}/config"
+ 
+
+# █▀▄ █▀▀ █▀▀ ▄▀█ █░█ █░░ ▀█▀
+# █▄▀ ██▄ █▀░ █▀█ █▄█ █▄▄ ░█░
 
 #create directories if they don't exist yet
 mkdir -p "${configdir}/.config"
@@ -34,6 +42,14 @@ cp -rf "${homedir}/.config/wlogout" "${configdir}/.config"
 # swaylock-effects
 cp -rf "${homedir}/.config/swaylock" "${configdir}/.config"
 
-# sddm config and theme
-cp -f "/etc/sddm.conf.d/sddm.conf" "${configdir}/sddm"
-cp -rf "/usr/share/sddm/themes/hyprppuccin" "${configdir}/sddm/themes"
+
+# █▀█ █▀█ █▀█ ▀█▀
+# █▀▄ █▄█ █▄█ ░█░
+
+if [[ "$(id -u)" -ne 0 ]] then
+	echo "Copying the sddm configuration requires root privileges."
+else
+	# sddm config and theme
+	cp -f "/etc/sddm.conf.d/sddm.conf" "${configdir}/sddm"
+	cp -rf "/usr/share/sddm/themes/hyprppuccin" "${configdir}/sddm/themes"
+fi
