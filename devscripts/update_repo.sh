@@ -11,6 +11,7 @@ mkdir -p "${configdir}/sddm/themes"
 # zsh
 cp -f "${homedir}/.zshrc" "${configdir}"
 cp -rf "${homedir}/.zsh" "${configdir}"
+cp -f "${homedir}/.config/starship.toml" "${configdir}"
 
 # hyprland
 cp -rf "${homedir}/.config/hypr" "${configdir}/.config"
