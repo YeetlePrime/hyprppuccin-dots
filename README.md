@@ -14,6 +14,7 @@ The theme is heavily inspired by the catppuccin hyprland theme from [hyprdots](h
 - Statusbar: [waybar](https://github.com/Alexays/Waybar)
 - Editor: [neovim](https://github.com/neovim/neovim)
 - Shell: [zsh](https://wiki.archlinux.org/title/zsh)
+- Shell Customizations: [starship](https://starship.rs/)
 - Terminal: [kitty](https://github.com/kovidgoyal/kitty)
 - File Manager: [dolphin](https://apps.kde.org/de/dolphin/)
 - Soundserver: [pulseaudio](https://wiki.archlinux.org/title/PulseAudio)
@@ -43,7 +44,7 @@ The background configuration is located inside the hyprland configuration. The b
 My personal [neovim configuration](https://github.com/YeetlePrime/nvim-config) can be found at `~/.config/nvim`.
 
 ### zsh (Shell)
-This is still a work in progress. Configuration can be found at `~/.zshrc` and `~/.zsh`.
+This is still a work in progress. Configuration can be found at `~/.zshrc`, `~/.zsh` and `starship.toml`.
 
 ### Kitty (Terminal)
 This is still a work in progress. Configuration can be found at `~/.config/kitty`.

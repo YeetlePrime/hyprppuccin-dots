@@ -14,3 +14,4 @@ pulseaudio
 pamixer
 wlogout
 swaylock-effects
+starship

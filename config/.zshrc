@@ -14,3 +14,7 @@ zstyle :compinstall filename '/home/yeetle/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+# ~/.zshrc
+
+# Add starship theming
+eval "$(starship init zsh)"
