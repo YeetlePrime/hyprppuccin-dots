@@ -1,3 +1,6 @@
 [submodule "config/.config/nvim"]
 	path = config/.config/nvim
 	url = https://github.com/YeetlePrime/nvim-config
+[submodule "config/.zsh/fsh"]
+	path = config/.zsh/fsh
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting
