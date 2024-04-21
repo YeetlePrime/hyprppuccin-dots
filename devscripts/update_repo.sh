@@ -36,4 +36,4 @@ cp -rf "${homedir}/.config/swaylock" "${configdir}/.config"
 
 # sddm config and theme
 cp -f "/etc/sddm.conf.d/sddm.conf" "${configdir}/sddm"
-cp -rf "/usr/share/sddm/themes/sddm-astronaut-theme" "${configdir}/sddm/themes"
+cp -rf "/usr/share/sddm/themes/hyprppuccin" "${configdir}/sddm/themes"

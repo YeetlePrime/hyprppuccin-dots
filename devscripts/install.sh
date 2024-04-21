@@ -8,7 +8,7 @@ configdir="${scriptdir}/../config"
 mkdir -p "${homedir}/.config"
 mkdir -p "/etc/sddm.conf.d"
 mkdir -p "/usr/share/sddm/themes"
-mkdir -p "/usr/share"
+mkdir -p "/usr/local/share/fonts"
 
 # zsh
 cp -f "${configdir}/.zshrc" "${homedir}"
@@ -19,5 +19,5 @@ cp -rf "${configdir}/.config/." "${homedir}/.config"
 
 # sddm config and theme
 cp -f "${configdir}/sddm/sddm.conf" "/etc/sddm.conf.d/sddm.conf"
-cp -rf "${configdir}/sddm/themes/sddm-astronaut-theme" "/usr/share/sddm/themes/"
-cp -rf "${configdir}/sddm/themes/sddm-astronaut-theme/Fonts/." "/usr/share/fonts"
+cp -rf "${configdir}/sddm/themes/." "/usr/share/sddm/themes/"
+cp -rf "${repodir}/fonts/." "/usr/local/share/fonts/"
