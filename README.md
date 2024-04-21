@@ -7,7 +7,7 @@ These are my personal dotfiles for my personal daily driver linux machine.
 It is my goal to create a simple hyprland user-experience that is easy to install (in the best case with only one script) in order to kickstart with a solid default installation, that can be further customized manually.  
 The theme is heavily inspired by the catppuccin hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots), but takes out a lot of the complexity with dynamic customization.
 
-## Used softare
+## Used software
 - Display System: [wayland](https://wayland.freedesktop.org/) 
 - Display/Login Manager: [sddm](https://github.com/sddm/sddm)
 - Window Manager: [hyprland](https://hyprland.org/)
