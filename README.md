@@ -68,3 +68,4 @@ Config can be found at `~/.config/swaylock/config`.
 - Customize wlogout looks
 - Complete wlogout functionality
 - Add keybindings for resizing windows
+- Add screenbrightness control
