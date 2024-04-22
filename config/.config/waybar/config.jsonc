@@ -163,11 +163,12 @@
     "pulseaudio": {
         "format": "{icon} {volume}",
         "rotate": 0,
-        "format-muted": "婢",
-        "on-click": "pavucontrol -t 3",
-        "on-click-middle": "volumecontrol.sh -o m",
-        "on-scroll-up": "volumecontrol.sh -o i",
-        "on-scroll-down": "volumecontrol.sh -o d",
+        "format-muted": "󰝟",
+        "on-click": "${HOME}/.config/waybar/scripts/volumecontrol.sh i",
+        "on-click-right": "${HOME}/.config/waybar/scripts/volumecontrol.sh d",
+        "on-click-middle": "${HOME}/.config/waybar/scripts/volumecontrol.sh m",
+        "on-scroll-up": "${HOME}/.config/waybar/scripts/volumecontrol.sh i",
+        "on-scroll-down": "${HOME}/.config/waybar/scripts/volumecontrol.sh d",
         "tooltip-format": "{icon} {desc} // {volume}%",
         "scroll-step": 5,
         "format-icons": {
