@@ -61,6 +61,7 @@ Config can be found at `~/.config/swaylock/config`.
 
 ## TODOs
 - nvim filter find_files and make the filename truncate (is often too long)
+- nvim fix rename for supporting lsps
 - Add automatic dependency installation to the install script (at least for pacman packages)
 - Extend the waybar with some basic functionality (Bluetooth, Network, Screenshots, Hardware stats)
 - Add script for volumecontrol to waybar (has to use pamixer)
