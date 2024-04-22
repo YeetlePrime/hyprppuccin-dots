@@ -57,11 +57,25 @@ return {
 				--  All the info you're looking for is in `:help telescope.setup()`
 				defaults = {
 					path_display = { "smart" },
+					vimgrep_arguments = {
+						"rg",
+						"--hidden",
+						"--color=never",
+						"--no-heading",
+						"--with-filename",
+						"--line-number",
+						"--column",
+						"--smart-case",
+					},
 					mappings = {
 						i = { ["<c-enter>"] = "to_fuzzy_refine" },
 					},
 				},
-				-- pickers = {}
+				pickers = {
+					find_files = {
+						hidden = true,
+					},
+				},
 				extensions = {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown(),
