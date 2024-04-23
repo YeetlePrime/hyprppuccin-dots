@@ -15,9 +15,9 @@
     "passthrough": false,
     "gtk-layer-shell": true,
 
-    "modules-left": ["custom/padd", "custom/l_end","custom/power","custom/r_end","custom/l_end","hyprland/workspaces","custom/spotify","custom/r_end","","custom/padd"],
-    "modules-center": ["custom/padd","custom/l_end","idle_inhibitor","clock","custom/r_end","custom/padd"],
-    "modules-right": ["custom/padd","custom/l_end","tray","battery","custom/r_end","custom/l_end","backlight","network","bluetooth","pulseaudio","pulseaudio#microphone","custom/keybindhint","custom/r_end","custom/padd"],
+    "modules-left": ["custom/padd", "custom/power", "custom/padd", "hyprland/workspaces", "custom/padd"],
+    "modules-center": ["custom/padd", "idle_inhibitor", "clock", "custom/padd"],
+    "modules-right": ["custom/padd", "tray", "battery", "backlight","network","bluetooth","pulseaudio","pulseaudio#microphone", "custom/keybindhint", "custom/padd"],
 
     "custom/power": {
         "format": "{}",
@@ -32,10 +32,10 @@
       "format-window-separator": " ",
       "window-rewrite-default": "",
       "window-rewrite": {
-        "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
-        "class<firefox>": "", // Windows whose classes are "firefox"
-        "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
-        "class<kitty>": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+        "title<.*youtube.*>": "",
+        "class<firefox> title<.*github.*>": "", 
+        "class<firefox>": "",
+        "class<kitty>": "",
         },
     },
     "custom/spotify": {
@@ -136,9 +136,7 @@
         "format-disabled": "",
         "format-connected": " {num_connections}",
         "format-connected-battery": "{icon} {num_connections}",
-        // "format-connected-battery": "{icon} {device_alias}-{device_battery_percentage}%",
         "format-icons": ["󰥇", "󰤾", "󰤿", "󰥀", "󰥁", "󰥂", "󰥃", "󰥄", "󰥅", "󰥆", "󰥈"],
-        // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device If this config option is not defined or none of the devices in the list are connected, it will fall back to showing the last connected device.
         "tooltip-format": "{controller_alias}\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias}\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}",
@@ -146,7 +144,7 @@
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}",
+        "format": "<big>{icon}</big> {volume}%",
         "rotate": 0,
         "format-muted": "󰝟",
         "on-click": "${HOME}/.config/waybar/scripts/volumecontrol.sh i",
@@ -184,45 +182,6 @@
         "format": " ",
         "rotate": 0,
         "on-click": "keybinds_hint.sh"
-    },
-
-
-// modules for padding //
-
-    "custom/l_end": {
-        "format": " ",
-        "interval" : "once",
-        "tooltip": false
-    },
-
-    "custom/r_end": {
-        "format": " ",
-        "interval" : "once",
-        "tooltip": false
-    },
-
-    "custom/sl_end": {
-        "format": " ",
-        "interval" : "once",
-        "tooltip": false
-    },
-
-    "custom/sr_end": {
-        "format": " ",
-        "interval" : "once",
-        "tooltip": false
-    },
-
-    "custom/rl_end": {
-        "format": " ",
-        "interval" : "once",
-        "tooltip": false
-    },
-
-    "custom/rr_end": {
-        "format": " ",
-        "interval" : "once",
-        "tooltip": false
     },
 
     "custom/padd": {
