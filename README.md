@@ -62,10 +62,10 @@ Config can be found at `~/.config/swaylock/config`.
 ## TODOs
 - nvim fix rename for supporting lsps
 - Add automatic dependency installation to the install script (at least for pacman packages)
-- Extend the waybar with some basic functionality (Bluetooth, Network, Screenshots, Hardware stats)
 - Customize dolphin
 - Add menu/application launcher (wofi, rofi or alike)
-- Customize wlogout looks
+- Customize wlogout theme
 - Complete wlogout functionality
 - Add keybindings for resizing windows
 - Add screenbrightness control
+- waybar fix hover over workspace buttons
