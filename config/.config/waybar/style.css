@@ -1,12 +1,17 @@
+@import "theme.css";
+
 * {
     border: none;
     border-radius: 0px;
     font-family: "CaskaydiaCove Nerd Font Mono";
-    font-size:12px; 
+    font-size:13px; 
     min-height: 10px;
 }
 
-@import "theme.css";
+big {
+    font-size: 15px;
+    font-weight: bold;
+}
 
 window#waybar {
     background: @base;

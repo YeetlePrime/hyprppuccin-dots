@@ -28,7 +28,7 @@
         "tooltip": true
     },
     "hyprland/workspaces": {
-      "format": "{icon} {windows}",
+      "format": "{icon} <big>{windows}</big>",
       "format-window-separator": " ",
       "window-rewrite-default": "",
       "window-rewrite": {
