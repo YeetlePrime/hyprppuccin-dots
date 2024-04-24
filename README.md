@@ -42,7 +42,7 @@ If you want to use sddm as your Display/Login Manager, make sure that systemd st
 ### Copy the config files to their respective directory
 You can do that manually, or use the script `./devscripts/install.sh`.  
 
-> [!INFO]
+> [!NOTE]
 > The sddm (Display/Login Manager) config requires sudo privileges to get copied to the right directory.
 
 > [!CAUTION]
