@@ -66,8 +66,9 @@ label.module {
 }
 
 #workspaces button {
-    margin: 5px 10px;
-    padding: 0;
+    padding: 0px 5px;
+    margin: 5px;
+    border-radius: 0;
     animation: none;
 }
 
