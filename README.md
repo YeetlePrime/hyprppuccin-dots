@@ -61,8 +61,7 @@ Config can be found at `~/.config/swaylock/config`.
 
 ## TODOs
 - nvim fix rename for supporting lsps
-- Add automatic dependency installation to the install script (at least for pacman packages)
-- Customize dolphin
+- Add dependency installation script for AUR packages (and yay)
 - Add menu/application launcher (wofi, rofi or alike)
 - Customize wlogout theme
 - Complete wlogout functionality
@@ -70,3 +69,4 @@ Config can be found at `~/.config/swaylock/config`.
 - Add screenbrightness control
 - waybar fix hover over workspace buttons
 - fix pavucontrol error: GDK_IS_X11_WINDOW failed
+- fix dolphin theme contrast for highlighted areas
