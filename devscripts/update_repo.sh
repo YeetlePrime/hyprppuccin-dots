@@ -36,6 +36,9 @@ cp -rf "${homedir}/.config/qt6ct" "${configdir}/.config"
 # dolphin
 cp -f "${homedir}/.config/dolphinrc" "${configdir}/.config"
 
+# kvantum
+cp -f "${homedir}/.config/Kvantum" "${configdir}/.config"
+
 # wlogout
 cp -rf "${homedir}/.config/wlogout" "${configdir}/.config"
 
