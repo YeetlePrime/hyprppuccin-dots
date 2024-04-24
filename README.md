@@ -7,6 +7,7 @@ These are my personal dotfiles for my personal daily driver linux machine.
 It is my goal to create a simple hyprland user-experience that is easy to install (in the best case with only one script) in order to kickstart with a solid default installation, that can be further customized manually.  
 The theme is heavily inspired by the catppuccin hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots), but takes out a lot of the complexity with dynamic customization.
 
+
 ## Used software
 - Display System: [wayland](https://wayland.freedesktop.org/) 
 - Display/Login Manager: [sddm](https://github.com/sddm/sddm)
@@ -22,12 +23,31 @@ The theme is heavily inspired by the catppuccin hyprland theme from [hyprdots](h
 - Session Lock: [swaylock-effects](https://github.com/mortie/swaylock-effects)
 - Sound: pipewire{,-audio,-jack,-pulse} wireplumber pamixer pavucontrol
 
+
 ## Installation
-1. Install all the listed dependencies
-1. enable sddm as display manager `systemctl enable sddm`
-1. Clone the repository `git clone --recurse-submodules --remote-submodules https://github.com/YeetlePrime/hyprppuccin-dots`
-1. Cd into repository `cd hyprppuccin-dots`
-1. Execute the install script `sudo devscripts/install.sh` (sudo is needed for sddm config) WARNING!! Your configs for the same packages will be overwritten. You may create a backup beforehand.
+### Clone the repository recursively
+Clone the repository with the command `git clone --recurse-submodules --remote-submodules https://github.com/YeetlePrime/hyprppuccin-dots`. You need to have git installed for that (`sudo pacman -S git`).  
+For the next steps I assume that you are in the basedirectory of this repository (`cd hyprppuccin-dots`).
+
+### Install all required dependencies
+Lists for the dependencies can be found in this repository at `devscripts/pacman_dependencies.txt` and `devscripts/aur_dependencies.txt`. The pacman dependencies can also be installed by executing the dependency installation script `sudo ./devscripts/install_pacman_dependencies.sh`.  
+The aur dependencies still have to be installed manually (or by using yay). A script for that is not provided yet. Also make sure to install `hyprland` either manually from [their homepage](https://hyprland.org/), or by using the respective pacman/yay package.
+
+> [!WARNING]
+> The hyprland packages are not maintaned by the creator and may be used at your own risk.
+
+### Enable sddm to start on boot
+If you want to use sddm as your Display/Login Manager, make sure that systemd starts it on boot. `systemctl enable sddm`
+
+### Copy the config files to their respective directory
+You can do that manually, or use the script `./devscripts/install.sh`.  
+
+> [!INFO]
+> The sddm (Display/Login Manager) config requires sudo privileges to get copied to the right directory.
+
+> [!CAUTION]
+> Your own configurations for the listed applications will get overwritten. Make sure to make backups of the mentioned files/directories. You don't wanna lose your stuff!
+
 
 ## Where to customize
 ### SDDM (Display/Login Manager)
@@ -59,6 +79,7 @@ User specific configuration can be found at `~/.config/wlogout`. Global configur
 ### swaylock-effects (Session Lock)
 Config can be found at `~/.config/swaylock/config`.
 
+
 ## TODOs
 - nvim fix rename for supporting lsps
 - Add dependency installation script for AUR packages (and yay)
@@ -66,7 +87,7 @@ Config can be found at `~/.config/swaylock/config`.
 - Customize wlogout theme
 - Complete wlogout functionality
 - Add keybindings for resizing windows
+- Add keybinding documentation
 - Add screenbrightness control
 - waybar fix hover over workspace buttons
-- fix pavucontrol error: GDK_IS_X11_WINDOW failed
 - fix dolphin theme contrast for highlighted areas
