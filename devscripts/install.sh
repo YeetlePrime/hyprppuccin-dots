@@ -14,6 +14,7 @@ configdir="${scriptdir}/../config"
 
 # make config directories
 mkdir -p "${homedir}/.config"
+mkdir -p "${homedir}/.icons"
 
 # config for zsh 
 cp -f "${configdir}/.zshrc" "${homedir}"
@@ -22,6 +23,8 @@ cp -rf "${configdir}/.zsh" "${homedir}"
 # copy all files from .config
 cp -rf "${configdir}/.config/." "${homedir}/.config"
 
+# copy all icon packs
+cp -rf "${repodir}/icons/." "${homedir}/.icons"
 
 # █▀█ █▀█ █▀█ ▀█▀
 # █▀▄ █▄█ █▄█ ░█░
