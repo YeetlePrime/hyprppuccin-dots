@@ -17,7 +17,7 @@
 
     "modules-left": ["custom/power", "hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["pulseaudio", "network", "backlight", "battery", "clock"],
+    "modules-right": ["wireplumber", "network", "backlight", "battery", "clock"],
 
     "custom/power": {
         "format": "<big></big>",
@@ -39,16 +39,14 @@
         },
     },
 
-    "pulseaudio": {
+    "wireplumber": {
         "tooltip": false,
         "format": "<big>{icon}</big> {volume}%",
-        "rotate": 0,
         "format-muted": "󰝟",
-        "on-click": "${HOME}/.config/waybar/scripts/volumecontrol.sh i",
-        "on-click-right": "${HOME}/.config/waybar/scripts/volumecontrol.sh d",
-        "on-click-middle": "${HOME}/.config/waybar/scripts/volumecontrol.sh m",
-        "on-scroll-up": "${HOME}/.config/waybar/scripts/volumecontrol.sh i",
-        "on-scroll-down": "${HOME}/.config/waybar/scripts/volumecontrol.sh d",
+        "on-click": "pavucontrol",
+        "on-click-middle": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
         "tooltip-format": "{icon} {desc} // {volume}%",
         "scroll-step": 5,
         "format-icons": {

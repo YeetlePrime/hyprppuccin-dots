@@ -18,9 +18,9 @@ The theme is heavily inspired by the catppuccin hyprland theme from [hyprdots](h
 - Shell Customizations: [starship](https://starship.rs/)
 - Terminal: [kitty](https://github.com/kovidgoyal/kitty)
 - File Manager: [dolphin](https://apps.kde.org/de/dolphin/)
-- Soundserver: [pulseaudio](https://wiki.archlinux.org/title/PulseAudio)
 - LogoutMenu: [wlogout](https://github.com/ArtsyMacaw/wlogout)
 - Session Lock: [swaylock-effects](https://github.com/mortie/swaylock-effects)
+- Sound: pipewire{,-audio,-jack,-pulse} wireplumber pamixer pavucontrol
 
 ## Installation
 1. Install all the listed dependencies
@@ -69,3 +69,4 @@ Config can be found at `~/.config/swaylock/config`.
 - Add keybindings for resizing windows
 - Add screenbrightness control
 - waybar fix hover over workspace buttons
+- fix pavucontrol error: GDK_IS_X11_WINDOW failed
