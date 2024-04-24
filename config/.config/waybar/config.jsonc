@@ -43,7 +43,7 @@
         "tooltip": false,
         "format": "<big>{icon}</big> {volume}%",
         "format-muted": "󰝟",
-        "on-click": "pavucontrol",
+        "on-click": "pavucontrol-qt",
         "on-click-middle": "pamixer -t",
         "on-scroll-up": "pamixer -i 5",
         "on-scroll-down": "pamixer -d 5",

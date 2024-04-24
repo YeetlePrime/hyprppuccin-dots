@@ -2,6 +2,8 @@ sddm
 waybar
 qt6ct
 qt6-wayland
+qt5ct
+qt5-wayland
 kvantum
 dolphin
 neovim
@@ -14,7 +16,7 @@ pipewire-pulse
 pipewire-audio
 pipewire-jack
 wireplumber
-pavucontrol
+pavucontrol-qt
 pamixer
 kitty
 zsh

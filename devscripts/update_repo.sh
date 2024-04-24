@@ -34,6 +34,9 @@ cp -rf "${homedir}/.config/kitty" "${configdir}/.config"
 # qt6ct
 cp -rf "${homedir}/.config/qt6ct" "${configdir}/.config"
 
+# qt6ct
+cp -rf "${homedir}/.config/qt5ct" "${configdir}/.config"
+
 # dolphin
 cp -f "${homedir}/.config/dolphinrc" "${configdir}/.config"
 
