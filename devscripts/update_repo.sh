@@ -15,6 +15,7 @@ configdir="${repodir}/config"
 #create directories if they don't exist yet
 mkdir -p "${configdir}/.config"
 mkdir -p "${configdir}/sddm/themes"
+mkdir -p "${configdir}/icons"
 
 # zsh
 cp -f "${homedir}/.zshrc" "${configdir}"
@@ -37,13 +38,16 @@ cp -rf "${homedir}/.config/qt6ct" "${configdir}/.config"
 cp -f "${homedir}/.config/dolphinrc" "${configdir}/.config"
 
 # kvantum
-cp -f "${homedir}/.config/Kvantum" "${configdir}/.config"
+cp -rf "${homedir}/.config/Kvantum" "${configdir}/.config"
 
 # wlogout
 cp -rf "${homedir}/.config/wlogout" "${configdir}/.config"
 
 # swaylock-effects
 cp -rf "${homedir}/.config/swaylock" "${configdir}/.config"
+
+# copy icons
+cp -rf "${homedir}/.icons/Tela-circle-dracula" "${repodir}/icons"
 
 
 # █▀█ █▀█ █▀█ ▀█▀
