@@ -43,13 +43,16 @@ If you want to use sddm as your Display/Login Manager, make sure that systemd st
 You can do that manually, or use the script `./devscripts/install.sh`.  
 
 > [!NOTE]
-> The sddm (Display/Login Manager) config requires sudo privileges to get copied to the right directory.
+> The sddm (Display/Login Manager) config requires sudo privileges to get copied to the right directory. The other configurations will also be copied without sudo priviliges.
 
 > [!CAUTION]
 > Your own configurations for the listed applications will get overwritten. Make sure to make backups of the mentioned files/directories. You don't wanna lose your stuff!
 
 
-## Where to customize
+## How to customize
+If you want to further rice the config yourself, you can change the config files locally in your cloned directory and then execute the installation script `devscript/install.sh` (or with sudo priviliges, if you changed something for sddm).  
+Alternatively you can change the configs directly on your system. All the appropriate config file locations are listed below.
+
 ### SDDM (Display/Login Manager)
 The config file `sddm.conf` is located at `/etc/sddm.conf.d`.
 It can be renamed and edited to your liking.  
@@ -60,6 +63,9 @@ The files for hyprland configurations are located at `~/.config/hypr`. The main 
 
 ### swww (Background)
 The background configuration is located inside the hyprland configuration. The background is set on hyprland startup inside `~/.config/hypr/hyprland.conf` (an `exec-once` statement in the launch category).
+
+### waybar (Status Bar)
+Config files are at `~/.config/waybar`.
 
 ### neovim (editor)
 My personal [neovim configuration](https://github.com/YeetlePrime/nvim-config) can be found at `~/.config/nvim`.
