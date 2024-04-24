@@ -97,3 +97,4 @@ Config can be found at `~/.config/swaylock/config`.
 - Add screenbrightness control
 - waybar fix hover over workspace buttons
 - fix dolphin theme contrast for highlighted areas
+- Add tool for taking screenshots
