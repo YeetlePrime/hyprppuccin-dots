@@ -3,9 +3,8 @@
     Hyprppuccin
 </h1>
 
-These are my personal dotfiles for my personal daily driver linux machine.
-It is my goal to create a simple hyprland user-experience that is easy to install (in the best case with only one script) in order to kickstart with a solid default installation, that can be further customized manually.  
-The theme is heavily inspired by the catppuccin hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots), but takes out a lot of the complexity with dynamic customization.
+These are my personal dotfiles for my personal daily driver linux machine with hyprppuccin mocha theme.
+The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots). The used sddm config is based on [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme).
 
 
 ## Used software
@@ -21,7 +20,7 @@ The theme is heavily inspired by the catppuccin hyprland theme from [hyprdots](h
 - File Manager: [dolphin](https://apps.kde.org/de/dolphin/)
 - LogoutMenu: [wlogout](https://github.com/ArtsyMacaw/wlogout)
 - Session Lock: [swaylock-effects](https://github.com/mortie/swaylock-effects)
-- Sound: pipewire{,-audio,-jack,-pulse} wireplumber pamixer pavucontrol
+- Sound: pipewire{,-audio,-jack,-pulse} wireplumber pamixer pavucontrol-qt
 
 
 ## Installation
@@ -56,7 +55,7 @@ Alternatively you can change the configs directly on your system. All the approp
 ### SDDM (Display/Login Manager)
 The config file `sddm.conf` is located at `/etc/sddm.conf.d`.
 It can be renamed and edited to your liking.  
-The themes are located at `/usr/share/sddm/themes`. The default theme for hyprppuccin is a slightly modified version of [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme). This theme can be further customized in `/usr/share/sddm/themes/hyprppuccin/theme.conf`.
+The themes are located at `/usr/share/sddm/themes`. The theme can be further customized in `/usr/share/sddm/themes/hyprppuccin/theme.conf`.
 
 ### Hyprland (Window Manager)
 The files for hyprland configurations are located at `~/.config/hypr`. The main configuration file is `hyprland.conf`.
@@ -98,3 +97,4 @@ Config can be found at `~/.config/swaylock/config`.
 - waybar fix hover over workspace buttons
 - fix dolphin theme contrast for highlighted areas
 - Add tool for taking screenshots
+- Make a table for dependency/customization
