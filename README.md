@@ -6,6 +6,7 @@
 These are my personal dotfiles for my personal daily driver linux machine with hyprppuccin mocha theme.
 The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots). The used sddm config is based on [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme).
 
+
 ## Dependencies
 <table>
     <thead>
@@ -99,6 +100,7 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
 
 </table>
 
+
 ## Installation
 ### 1. Clone the repository recursively
 Clone the repository with the command `git clone --recurse-submodules --remote-submodules https://github.com/YeetlePrime/hyprppuccin-dots`. You need to have git installed for that (`sudo pacman -S git`).  
@@ -131,6 +133,12 @@ If you want to use sddm as your Display/Login Manager, make sure that systemd st
 If you want to further rice the config yourself, you can change the config files locally in your cloned directory and then execute the installation script `devscript/install.sh` (or with sudo priviliges, if you changed something for sddm).  
 Alternatively you can change the configs directly on your system. 
 You can see where to find the config files in the [table above](#dependencies).
+
+
+## Screenshots
+![](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/empty.png)
+![](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/single_window.png)
+![](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/multiple_windows.png)
 
 
 ## TODOs
