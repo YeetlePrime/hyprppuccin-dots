@@ -1,2 +1,2 @@
 wlogout
-swayock-effects-git
+swaylock-effects-git

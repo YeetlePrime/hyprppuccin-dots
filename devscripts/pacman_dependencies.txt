@@ -1,3 +1,5 @@
+git
+base-devel
 sddm
 waybar
 qt6ct
