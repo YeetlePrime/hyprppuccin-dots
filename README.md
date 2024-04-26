@@ -56,8 +56,8 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>Editor</td> 
             <td>[neovim](https://github.com/neovim/neovim)</td> 
-            <td><code>config/.config/nvim<</code>/td> 
-            <td><code>~/.config/nvim<</code>/td> 
+            <td><code>config/.config/nvim<</code></td> 
+            <td><code>~/.config/nvim<</code></td> 
         </tr>
         <tr>
             <td>Shell</td> 
@@ -80,14 +80,14 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>LogoutMenu</td> 
             <td>[wlogout](https://github.com/ArtsyMacaw/wlogout)</td> 
-            <td><code>config/.config/wlogout<</code>/td> 
-            <td><code>~/.config/wlogout<</code>/td> 
+            <td><code>config/.config/wlogout<</code></td> 
+            <td><code>~/.config/wlogout<</code></td> 
         </tr>
         <tr>
             <td>Session Lock</td> 
             <td>[swaylock-effects](https://github.com/mortie/swaylock-effects)</td> 
-            <td><code>config/.config/swaylock<</code>/td> 
-            <td><code>~/.config/swaylock<</code>/td> 
+            <td><code>config/.config/swaylock<</code></td> 
+            <td><code>~/.config/swaylock<</code></td> 
         </tr>
         <tr>
             <td>Sound</td> 
