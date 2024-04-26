@@ -100,11 +100,11 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
 </table>
 
 ## Installation
-### Clone the repository recursively
+### 1. Clone the repository recursively
 Clone the repository with the command `git clone --recurse-submodules --remote-submodules https://github.com/YeetlePrime/hyprppuccin-dots`. You need to have git installed for that (`sudo pacman -S git`).  
 For the next steps I assume that you are in the basedirectory of this repository (`cd hyprppuccin-dots`).
 
-### Install all required dependencies and the configuration
+### 2. Install all required dependencies and the configuration
 #### Automatic installation
 The automatic installation process will download all dependencies that can be installed with pacman, then [yay](https://github.com/Jguer/yay) and all aur dependencies get installed.  
 Lastly all the configuration files from this repository are copied to their respective target directory.
@@ -123,7 +123,7 @@ To install the whole configuration execute the full install script **without** r
 1. Install hyprland as described [here](https://wiki.hyprland.org/Getting-Started/Installation/).
 1. Copy all the configuration files to their respective target directory (for example by using the script config script `sudo ./devscripts/apply_config.sh`).
 
-### Enable sddm to start on boot
+### 3, Enable sddm to start on boot
 If you want to use sddm as your Display/Login Manager, make sure that systemd starts it on boot. `systemctl enable sddm`
 
 
