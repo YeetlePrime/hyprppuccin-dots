@@ -3,7 +3,10 @@
 # █░█ ▄▀█ █▀█ █▀
 # ▀▄▀ █▀█ █▀▄ ▄█
 
-homedir=$( getent passwd "$USER" | cut -d: -f6 )
+
+user=${SUDO_USER:-${LOGNAME}}
+
+homedir=$( getent passwd "$user" | cut -d: -f6 )
 scriptdir="$(dirname $0)"
 repodir="${scriptdir}/.."
 configdir="${scriptdir}/../config"
