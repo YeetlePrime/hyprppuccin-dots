@@ -144,6 +144,7 @@ You can see where to find the config files in the [table above](#dependencies).
 ## TODOs
 - nvim fix rename for supporting lsps
 - Add menu/application launcher (wofi, rofi or alike)
+    - Add clipboard history to menu
 - Customize wlogout theme
 - Complete wlogout functionality
 - Add keybindings for resizing windows
@@ -151,4 +152,3 @@ You can see where to find the config files in the [table above](#dependencies).
 - Add screenbrightness control
 - Fix waybar hover over workspace buttons
 - Fix dolphin theme contrast for highlighted areas
-- Add tool for taking screenshots
