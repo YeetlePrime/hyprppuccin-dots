@@ -142,13 +142,19 @@ You can see where to find the config files in the [table above](#dependencies).
 
 
 ## TODOs
-- nvim fix rename for supporting lsps
+- nvim
+    - fix rename shortcut for supporting lsps
 - Add menu/application launcher (wofi, rofi or alike)
     - Add clipboard history to menu
-- Customize wlogout theme
-- Complete wlogout functionality
-- Add keybindings for resizing windows
-- Add keybinding documentation
-- Add screenbrightness control
-- Fix waybar hover over workspace buttons
-- Fix dolphin theme contrast for highlighted areas
+- wlogout
+    - customize theme
+    - complete functionality (hibernate, logout, sleep)
+- hyprland
+    - add keybindings for resizing windows
+-readme
+    - add keybinding documentation
+- waybar
+    - add screenbrightness control
+    - fix hover over workspace buttons
+- dolphin/qt6ct/qt5ct
+    - fix contrast for highlighted areas
