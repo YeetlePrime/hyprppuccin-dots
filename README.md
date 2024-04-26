@@ -151,13 +151,13 @@ You can see where to find the config files in the [table above](#dependencies).
 - nvim
     - fix rename shortcut for supporting lsps
 - rofi 
-    - add clipboard history to menu
+    - customize theme
 - wlogout
     - customize theme
     - complete functionality (hibernate, logout, sleep)
 - hyprland
     - add keybindings for resizing windows
--readme
+- readme
     - add keybinding documentation
 - waybar
     - add screenbrightness control
