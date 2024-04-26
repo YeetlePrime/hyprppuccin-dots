@@ -27,19 +27,19 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
             <td>
                 General: <code>config/sddm/sddm.conf</code>
                 </br>
-                Themes: `config/sddm/themes`
+                Themes: <code>config/sddm/themes</code>
             </td> 
             <td>
-                General: `/etc/sddm.conf.d/sddm.conf`
+                General: <code>/etc/sddm.conf.d/sddm.conf</code>
                 </br>
-                Themes: `config/sddm/themes`
+                Themes: <code>config/sddm/themes</code>
             </td> 
         </tr>
         <tr>
             <td>Window Manager</td> 
             <td>[hyprland](https://hyprland.org/)</td> 
-            <td>`config/.config/hypr`</td> 
-            <td>`~/.config/hypr</td> 
+            <td><code>config/.config/hypr</code></td> 
+            <td><code>~/.config/hypr</code></td> 
         </tr>
         <tr>
             <td>Wallpaper Daemon</td> 
@@ -50,26 +50,26 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>Statusbar</td> 
             <td>[waybar](https://github.com/Alexays/Waybar)</td> 
-            <td>`config/.config/waybar</td> 
-            <td>`~/.config/waybar`</td> 
+            <td><code>config/.config/waybar</code></td> 
+            <td><code>~/.config/waybar<</code>/td> 
         </tr>
         <tr>
             <td>Editor</td> 
             <td>[neovim](https://github.com/neovim/neovim)</td> 
-            <td>`config/.config/nvim`</td> 
-            <td>`~/.config/nvim`</td> 
+            <td><code>config/.config/nvim<</code>/td> 
+            <td><code>~/.config/nvim<</code>/td> 
         </tr>
         <tr>
             <td>Shell</td> 
             <td>[zsh](https://wiki.archlinux.org/title/zsh) with [starship](https://starship.rs/)</td> 
-            <td>`config/.zshrc`, `config/.zsh`, `config/.config/starship.toml`</td>
-            <td>`~/.zshrc`, `~/.zsh`, `~/.config/starship.toml`</td> 
+            <td><code>config/.zshrc,</code> <code>config/.zsh,</code> <code>config/.config/starship.toml<</code>/td>
+            <td><code>~/.zshrc,</code> <code>~/.zsh,</code> <code>~/.config/starship.toml<</code>/td> 
         </tr>
         <tr>
             <td>Terminal</td> 
             <td>[kitty](https://github.com/kovidgoyal/kitty)</td> 
-            <td>`config/.config/kitty`</td> 
-            <td>`~/.config/kitty</td> 
+            <td><code>config/.config/kitty<</code>/td> 
+            <td><code>~/.config/kitty</code></td> 
         </tr>
         <tr>
             <td>File Manager</td> 
@@ -80,14 +80,14 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>LogoutMenu</td> 
             <td>[wlogout](https://github.com/ArtsyMacaw/wlogout)</td> 
-            <td>`config/.config/wlogout`</td> 
-            <td>`~/.config/wlogout`</td> 
+            <td><code>config/.config/wlogout<</code>/td> 
+            <td><code>~/.config/wlogout<</code>/td> 
         </tr>
         <tr>
             <td>Session Lock</td> 
             <td>[swaylock-effects](https://github.com/mortie/swaylock-effects)</td> 
-            <td>`config/.config/swaylock`</td> 
-            <td>`~/.config/swaylock`</td> 
+            <td><code>config/.config/swaylock<</code>/td> 
+            <td><code>~/.config/swaylock<</code>/td> 
         </tr>
         <tr>
             <td>Sound</td> 
