@@ -75,7 +75,13 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>File Manager</td> 
             <td>[dolphin](https://apps.kde.org/de/dolphin/)</td> 
-            <td></td> 
+            <td><code>config/.config/dolphinrc</code>, <code>config/.config/qt6ct</code></td> 
+            <td><code>~/.config/dolphinrc</code>, <code>~/.config/qt6ct</code></td> 
+        </tr>
+        <tr>
+            <td>App Launcher</td> 
+            <td>[rofi (wayland fork)](https://github.com/lbonn/rofi)</td> 
+            <td>Not customized yet</td> 
             <td></td> 
         </tr>
         <tr>
@@ -144,8 +150,9 @@ You can see where to find the config files in the [table above](#dependencies).
 ## TODOs
 - nvim
     - fix rename shortcut for supporting lsps
-- Add menu/application launcher (wofi, rofi or alike)
-    - Add clipboard history to menu
+- rofi 
+    - add clipboard history to menu
+    - add theme/customization
 - wlogout
     - customize theme
     - complete functionality (hibernate, logout, sleep)
