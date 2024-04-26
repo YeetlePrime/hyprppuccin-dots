@@ -25,7 +25,7 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
             <td>Display/Login Manager</td> 
             <td>[sddm](https://github.com/sddm/sddm)</td> 
             <td>
-                General: `config/sddm/sddm.conf`
+                General: <code>config/sddm/sddm.conf</code>
                 </br>
                 Themes: `config/sddm/themes`
             </td> 
