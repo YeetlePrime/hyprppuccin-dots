@@ -18,8 +18,8 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>Display System</td> 
             <td>[wayland](https://wayland.freedesktop.org/)</td> 
-            <td>/</td> 
-            <td>/</td> 
+            <td></td> 
+            <td></td> 
         </tr>
         <tr>
             <td>Display/Login Manager</td> 
@@ -44,8 +44,8 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>Wallpaper Daemon</td> 
             <td>[swww](https://hyprland.org/)</td> 
-            <td>/</td> 
-            <td>/</td> 
+            <td></td> 
+            <td></td> 
         </tr>
         <tr>
             <td>Statusbar</td> 
@@ -74,8 +74,8 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>File Manager</td> 
             <td>[dolphin](https://apps.kde.org/de/dolphin/)</td> 
-            <td>/</td> 
-            <td>/</td> 
+            <td></td> 
+            <td></td> 
         </tr>
         <tr>
             <td>LogoutMenu</td> 
@@ -92,8 +92,8 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>Sound</td> 
             <td>pipewire{,-audio,-jack,-pulse} wireplumber pamixer pavucontrol-qtd></td> 
-            <td>/</td> 
-            <td>/</td> 
+            <td></td> 
+            <td></td> 
         </tr>
     </tbody>
 
