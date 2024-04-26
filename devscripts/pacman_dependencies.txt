@@ -23,3 +23,7 @@ pamixer
 kitty
 zsh
 starship
+grim
+slurp
+wl-clipboard
+cliphist
