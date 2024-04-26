@@ -51,24 +51,24 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
             <td>Statusbar</td> 
             <td>[waybar](https://github.com/Alexays/Waybar)</td> 
             <td><code>config/.config/waybar</code></td> 
-            <td><code>~/.config/waybar<</code>/td> 
+            <td><code>~/.config/waybar</code></td> 
         </tr>
         <tr>
             <td>Editor</td> 
             <td>[neovim](https://github.com/neovim/neovim)</td> 
-            <td><code>config/.config/nvim<</code></td> 
-            <td><code>~/.config/nvim<</code></td> 
+            <td><code>config/.config/nvim</code></td> 
+            <td><code>~/.config/nvim</code></td> 
         </tr>
         <tr>
             <td>Shell</td> 
             <td>[zsh](https://wiki.archlinux.org/title/zsh) with [starship](https://starship.rs/)</td> 
-            <td><code>config/.zshrc,</code> <code>config/.zsh,</code> <code>config/.config/starship.toml<</code>/td>
-            <td><code>~/.zshrc,</code> <code>~/.zsh,</code> <code>~/.config/starship.toml<</code>/td> 
+            <td><code>config/.zshrc,</code> <code>config/.zsh,</code> <code>config/.config/starship.toml</code></td>
+            <td><code>~/.zshrc,</code> <code>~/.zsh,</code> <code>~/.config/starship.toml</code></td> 
         </tr>
         <tr>
             <td>Terminal</td> 
             <td>[kitty](https://github.com/kovidgoyal/kitty)</td> 
-            <td><code>config/.config/kitty<</code>/td> 
+            <td><code>config/.config/kitty</code></td> 
             <td><code>~/.config/kitty</code></td> 
         </tr>
         <tr>
@@ -80,14 +80,14 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>LogoutMenu</td> 
             <td>[wlogout](https://github.com/ArtsyMacaw/wlogout)</td> 
-            <td><code>config/.config/wlogout<</code></td> 
-            <td><code>~/.config/wlogout<</code></td> 
+            <td><code>config/.config/wlogout</code></td> 
+            <td><code>~/.config/wlogout</code></td> 
         </tr>
         <tr>
             <td>Session Lock</td> 
             <td>[swaylock-effects](https://github.com/mortie/swaylock-effects)</td> 
-            <td><code>config/.config/swaylock<</code></td> 
-            <td><code>~/.config/swaylock<</code></td> 
+            <td><code>config/.config/swaylock</code></td> 
+            <td><code>~/.config/swaylock</code></td> 
         </tr>
         <tr>
             <td>Sound</td> 
