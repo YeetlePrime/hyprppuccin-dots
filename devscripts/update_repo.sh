@@ -3,7 +3,8 @@
 # █░█ ▄▀█ █▀█ █▀
 # ▀▄▀ █▀█ █▀▄ ▄█
 
-homedir=$( getent passwd "$USER" | cut -d: -f6 )
+user=${SUDO_USER:-${LOGNAME}}
+homedir=$( getent passwd "$user" | cut -d: -f6 )
 scriptdir="$(dirname $0)"
 repodir="${scriptdir}/.."
 configdir="${repodir}/config"
@@ -34,7 +35,7 @@ cp -rf "${homedir}/.config/kitty" "${configdir}/.config"
 # qt6ct
 cp -rf "${homedir}/.config/qt6ct" "${configdir}/.config"
 
-# qt6ct
+# qt5ct
 cp -rf "${homedir}/.config/qt5ct" "${configdir}/.config"
 
 # dolphin
@@ -48,6 +49,9 @@ cp -rf "${homedir}/.config/wlogout" "${configdir}/.config"
 
 # swaylock-effects
 cp -rf "${homedir}/.config/swaylock" "${configdir}/.config"
+
+# rofi
+cp -rf "${homedir}/.config/rofi" "${configdir}/.config"
 
 # copy icons
 cp -rf "${homedir}/.icons/Tela-circle-dracula" "${repodir}/icons"

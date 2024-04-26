@@ -81,8 +81,8 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         <tr>
             <td>App Launcher</td> 
             <td>[rofi (wayland fork)](https://github.com/lbonn/rofi)</td> 
-            <td>Not customized yet</td> 
-            <td></td> 
+            <td><code>config/.config/rofi</code></td> 
+            <td><code>~/.config/rofi</code></td> 
         </tr>
         <tr>
             <td>LogoutMenu</td> 
@@ -152,7 +152,6 @@ You can see where to find the config files in the [table above](#dependencies).
     - fix rename shortcut for supporting lsps
 - rofi 
     - add clipboard history to menu
-    - add theme/customization
 - wlogout
     - customize theme
     - complete functionality (hibernate, logout, sleep)
