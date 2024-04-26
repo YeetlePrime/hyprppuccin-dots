@@ -17,13 +17,16 @@ mkdir -p "${homedir}/.config"
 mkdir -p "${homedir}/.icons"
 
 # config for zsh 
+echo "Applying zsh config..."
 cp -f "${configdir}/.zshrc" "${homedir}"
 cp -rf "${configdir}/.zsh" "${homedir}"
 
 # copy all files from .config
+echo "Applying config for everything in ~/.config"
 cp -rf "${configdir}/.config/." "${homedir}/.config"
 
 # copy all icon packs
+echo "Copying icon packs..."
 cp -rf "${repodir}/icons/." "${homedir}/.icons"
 
 # █▀█ █▀█ █▀█ ▀█▀
@@ -37,6 +40,7 @@ else
 	mkdir -p "/usr/local/share/fonts"
 
 	# sddm config and theme
+	echo "Applying sddm config..."
 	cp -f "${configdir}/sddm/sddm.conf" "/etc/sddm.conf.d/sddm.conf"
 	cp -rf "${configdir}/sddm/themes/." "/usr/share/sddm/themes/"
 	cp -rf "${repodir}/fonts/." "/usr/local/share/fonts/"
