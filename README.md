@@ -6,95 +6,141 @@
 These are my personal dotfiles for my personal daily driver linux machine with hyprppuccin mocha theme.
 The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots). The used sddm config is based on [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme).
 
+## Dependencies
+<table>
+    <thead>
+        <th>Type</th>
+        <th>Used Software</th>
+        <th>Repo Config</th>
+        <th>System Config</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Display System</td> 
+            <td>[wayland](https://wayland.freedesktop.org/)</td> 
+            <td>/</td> 
+            <td>/</td> 
+        </tr>
+        <tr>
+            <td>Display/Login Manager</td> 
+            <td>[sddm](https://github.com/sddm/sddm)</td> 
+            <td>
+                General: `config/sddm/sddm.conf`
+                </br>
+                Themes: `config/sddm/themes`
+            </td> 
+            <td>
+                General: `/etc/sddm.conf.d/sddm.conf`
+                </br>
+                Themes: `config/sddm/themes`
+            </td> 
+        </tr>
+        <tr>
+            <td>Window Manager</td> 
+            <td>[hyprland](https://hyprland.org/)</td> 
+            <td>`config/.config/hypr`</td> 
+            <td>`~/.config/hypr</td> 
+        </tr>
+        <tr>
+            <td>Wallpaper Daemon</td> 
+            <td>[swww](https://hyprland.org/)</td> 
+            <td>/</td> 
+            <td>/</td> 
+        </tr>
+        <tr>
+            <td>Statusbar</td> 
+            <td>[waybar](https://github.com/Alexays/Waybar)</td> 
+            <td>`config/.config/waybar</td> 
+            <td>`~/.config/waybar`</td> 
+        </tr>
+        <tr>
+            <td>Editor</td> 
+            <td>[neovim](https://github.com/neovim/neovim)</td> 
+            <td>`config/.config/nvim`</td> 
+            <td>`~/.config/nvim`</td> 
+        </tr>
+        <tr>
+            <td>Shell</td> 
+            <td>[zsh](https://wiki.archlinux.org/title/zsh) with [starship](https://starship.rs/)</td> 
+            <td>`config/.zshrc`, `config/.zsh`, `config/.config/starship.toml`</td>
+            <td>`~/.zshrc`, `~/.zsh`, `~/.config/starship.toml`</td> 
+        </tr>
+        <tr>
+            <td>Terminal</td> 
+            <td>[kitty](https://github.com/kovidgoyal/kitty)</td> 
+            <td>`config/.config/kitty`</td> 
+            <td>`~/.config/kitty</td> 
+        </tr>
+        <tr>
+            <td>File Manager</td> 
+            <td>[dolphin](https://apps.kde.org/de/dolphin/)</td> 
+            <td>/</td> 
+            <td>/</td> 
+        </tr>
+        <tr>
+            <td>LogoutMenu</td> 
+            <td>[wlogout](https://github.com/ArtsyMacaw/wlogout)</td> 
+            <td>`config/.config/wlogout`</td> 
+            <td>`~/.config/wlogout`</td> 
+        </tr>
+        <tr>
+            <td>Session Lock</td> 
+            <td>[swaylock-effects](https://github.com/mortie/swaylock-effects)</td> 
+            <td>`config/.config/swaylock`</td> 
+            <td>`~/.config/swaylock`</td> 
+        </tr>
+        <tr>
+            <td>Sound</td> 
+            <td>pipewire{,-audio,-jack,-pulse} wireplumber pamixer pavucontrol-qtd></td> 
+            <td>/</td> 
+            <td>/</td> 
+        </tr>
+    </tbody>
 
-## Used software
-- Display System: [wayland](https://wayland.freedesktop.org/) 
-- Display/Login Manager: [sddm](https://github.com/sddm/sddm)
-- Window Manager: [hyprland](https://hyprland.org/)
-- Wallpaper Daemon: [swww](https://hyprland.org/)
-- Statusbar: [waybar](https://github.com/Alexays/Waybar)
-- Editor: [neovim](https://github.com/neovim/neovim)
-- Shell: [zsh](https://wiki.archlinux.org/title/zsh)
-- Shell Customizations: [starship](https://starship.rs/)
-- Terminal: [kitty](https://github.com/kovidgoyal/kitty)
-- File Manager: [dolphin](https://apps.kde.org/de/dolphin/)
-- LogoutMenu: [wlogout](https://github.com/ArtsyMacaw/wlogout)
-- Session Lock: [swaylock-effects](https://github.com/mortie/swaylock-effects)
-- Sound: pipewire{,-audio,-jack,-pulse} wireplumber pamixer pavucontrol-qt
-
+</table>
 
 ## Installation
 ### Clone the repository recursively
 Clone the repository with the command `git clone --recurse-submodules --remote-submodules https://github.com/YeetlePrime/hyprppuccin-dots`. You need to have git installed for that (`sudo pacman -S git`).  
 For the next steps I assume that you are in the basedirectory of this repository (`cd hyprppuccin-dots`).
 
-### Install all required dependencies
-Lists for the dependencies can be found in this repository at `devscripts/pacman_dependencies.txt` and `devscripts/aur_dependencies.txt`. The pacman dependencies can also be installed by executing the dependency installation script `sudo ./devscripts/install_pacman_dependencies.sh`.  
-The aur dependencies still have to be installed manually (or by using yay). A script for that is not provided yet. Also make sure to install `hyprland` either manually from [their homepage](https://hyprland.org/), or by using the respective pacman/yay package.
+### Install all required dependencies and the configuration
+#### Automatic installation
+The automatic installation process will download all dependencies that can be installed with pacman, then [yay](https://github.com/Jguer/yay) and all aur dependencies get installed.  
+Lastly all the configuration files from this repository are copied to their respective target directory.
+To install the whole configuration execute the full install script **without** root privileges `./devscripts/full_install.sh`.
 
 > [!WARNING]
-> The hyprland packages are not maintaned by the creator and may be used at your own risk.
-
-### Enable sddm to start on boot
-If you want to use sddm as your Display/Login Manager, make sure that systemd starts it on boot. `systemctl enable sddm`
-
-### Copy the config files to their respective directory
-You can do that manually, or use the script `./devscripts/install.sh`.  
-
-> [!NOTE]
-> The sddm (Display/Login Manager) config requires sudo privileges to get copied to the right directory. The other configurations will also be copied without sudo priviliges.
+> You have to manually install hyprland with [this guide](https://wiki.hyprland.org/Getting-Started/Installation/).
+> The hyprland packages are not maintaned by the creator and yet not installed by the installation script.
+> You may use `sudo pacman -S hyprland` or `yay -S hyprland-git` to install hyprland from the community-maintained packages.
 
 > [!CAUTION]
 > Your own configurations for the listed applications will get overwritten. Make sure to make backups of the mentioned files/directories. You don't wanna lose your stuff!
 
+#### Manual installation
+1. Install all the dependencies listed in `devscripts/pacman_dependencies.txt` and `devscripts/aur_dependencies.txt`.
+1. Install hyprland as described [here](https://wiki.hyprland.org/Getting-Started/Installation/).
+1. Copy all the configuration files to their respective target directory (for example by using the script config script `sudo ./devscripts/apply_config.sh`).
 
-## How to customize
+### Enable sddm to start on boot
+If you want to use sddm as your Display/Login Manager, make sure that systemd starts it on boot. `systemctl enable sddm`
+
+
+## Configuration
 If you want to further rice the config yourself, you can change the config files locally in your cloned directory and then execute the installation script `devscript/install.sh` (or with sudo priviliges, if you changed something for sddm).  
-Alternatively you can change the configs directly on your system. All the appropriate config file locations are listed below.
-
-### SDDM (Display/Login Manager)
-The config file `sddm.conf` is located at `/etc/sddm.conf.d`.
-It can be renamed and edited to your liking.  
-The themes are located at `/usr/share/sddm/themes`. The theme can be further customized in `/usr/share/sddm/themes/hyprppuccin/theme.conf`.
-
-### Hyprland (Window Manager)
-The files for hyprland configurations are located at `~/.config/hypr`. The main configuration file is `hyprland.conf`.
-
-### swww (Background)
-The background configuration is located inside the hyprland configuration. The background is set on hyprland startup inside `~/.config/hypr/hyprland.conf` (an `exec-once` statement in the launch category).
-
-### waybar (Status Bar)
-Config files are at `~/.config/waybar`.
-
-### neovim (editor)
-My personal [neovim configuration](https://github.com/YeetlePrime/nvim-config) can be found at `~/.config/nvim`.
-
-### zsh (Shell)
-This is still a work in progress. Configuration can be found at `~/.zshrc`, `~/.zsh` and `starship.toml`.
-
-### Kitty (Terminal)
-This is still a work in progress. Configuration can be found at `~/.config/kitty`.
-
-### Dolphin (File Manager)
-This is very much a work in progress and barely customized.
-
-### wlogout (Logout Menu)
-User specific configuration can be found at `~/.config/wlogout`. Global configuration can be found at `/etc/wlogout`.
-
-### swaylock-effects (Session Lock)
-Config can be found at `~/.config/swaylock/config`.
+Alternatively you can change the configs directly on your system. 
+You can see where to find the config files in the [table above](#dependencies).
 
 
 ## TODOs
 - nvim fix rename for supporting lsps
-- Add dependency installation script for AUR packages (and yay)
 - Add menu/application launcher (wofi, rofi or alike)
 - Customize wlogout theme
 - Complete wlogout functionality
 - Add keybindings for resizing windows
 - Add keybinding documentation
 - Add screenbrightness control
-- waybar fix hover over workspace buttons
-- fix dolphin theme contrast for highlighted areas
+- Fix waybar hover over workspace buttons
+- Fix dolphin theme contrast for highlighted areas
 - Add tool for taking screenshots
-- Make a table for dependency/customization
