@@ -1,10 +1,38 @@
 * {
-    main-bg:            #dce0e8e6;
-    main-fg:            #4c4f69ff;
-    main-br:            #9ca0b0ff;
-    main-ex:            #8839efff;
-    select-bg:          #dd7878ff;
-    select-fg:          #eff1f5ff;
-    separatorcolor:     transparent;
-    border-color:       transparent;
+	rosewater: #dc8a78ff;
+	flamingo: #dd7878ff;
+	pink: #ea76cbff;
+	mauve: #8839efff;
+	red: #d20f39ff;
+	maroon: #e64553ff;
+	peach: #fe640bff;
+	yellow: #df8e1dff;
+	green: #40a02bff;
+	teal: #179299ff;
+	sky: #04a5e5ff;
+	sapphire: #209fb5ff;
+	blue: #1e66f5ff;
+	lavender: #7287fdff;
+	text: #4c4f69ff;
+	subtext1: #5c5f77ff;
+	subtext0: #6c6f85ff;
+	overlay2: #7c7f93ff;
+	overlay1: #8c8fa1ff;
+	overlay0: #9ca0b0ff;
+	surface2: #acb0beff;
+	surface1: #bcc0ccff;
+	surface0: #ccd0daff;
+	base: #eff1f5ff;
+	mantle: #e6e9efff;
+	crust: #dce0e8ff;
+
+	main-bg:            @base;
+	main-fg:            @text;
+	main-br:            @mauve;
+	main-ex:            @rosewater;
+	select-bg:          @lavender;
+	select-fg:          @crust;
+	separatorcolor:     transparent;
+	border-color:       transparent;
 }
+
