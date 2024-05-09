@@ -23,7 +23,7 @@
         "format": "<big></big>",
         "rotate": 0,
         "exec": "echo ; echo  logout",
-        "on-click": "wlogout",
+        "on-click": "wlogout -b 2",
         "interval" : 86400, // once every day
         "tooltip": false
     },
