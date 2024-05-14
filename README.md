@@ -148,8 +148,6 @@ You can see where to find the config files in the [table above](#dependencies).
 
 
 ## TODOs
-- nvim
-    - fix rename shortcut for supporting lsps
 - rofi 
     - customize theme
 - wlogout
