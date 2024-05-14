@@ -34,7 +34,7 @@
       "window-rewrite": {
         "title<.*youtube.*>": "<big></big>",
         "class<firefox>": "<big></big>",
-        "class<discord>": "<big></big>",
+        "class<firefox>": "<big></big>",
         "class<kitty>": "<big></big>",
         "class<kitty> title<nvim.*>": "<big></big>",
         "class<.*dolphin>": "<big>󰉋</big>",
@@ -64,7 +64,7 @@
     },
 
     "network": {
-        "tooltip": false,
+        "tooltip": true,
         "format-wifi": "<big></big> {signalStrength}%",
         "rotate": 0,
         "format-ethernet": "󰈀 ",
@@ -82,8 +82,8 @@
         "rotate": 0,
         "format": "<big>{icon}</big> {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-",
+        "on-scroll-up": "~/.config/waybar/scripts/brightness.sh i",
+        "on-scroll-down": "~/.config/waybar/scripts/brightness.sh d",
         "min-length": 6
     },
 

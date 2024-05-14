@@ -158,7 +158,7 @@ You can see where to find the config files in the [table above](#dependencies).
 - readme
     - add keybinding documentation
 - waybar
-    - add screenbrightness control
+    - add network control utility (graphical)
     - fix hover over workspace buttons
 - dolphin/qt6ct/qt5ct
     - fix contrast for highlighted areas
