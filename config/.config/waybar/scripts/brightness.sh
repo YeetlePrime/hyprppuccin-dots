@@ -10,8 +10,8 @@ elif [[ $1 = "d" ]]; then
 	max_brightness=$(brightnessctl m -m);
 	current_brightness_percent=$((current_brightness * 100 / max_brightness));
 
-	if [[ $current_brightness_percent -lt 6 ]]; then
-		brightnessctl s 5%;
+	if [[ $current_brightness_percent -lt 2 ]]; then
+		brightnessctl s 1%;
 	else
 		brightnessctl s 1%-;
 	fi
