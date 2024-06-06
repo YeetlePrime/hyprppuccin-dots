@@ -5,7 +5,7 @@ return {
 			show_hidden = true,
 		},
 	},
-	config = function(opts)
+	config = function(_PluginSpec, opts)
 		vim.keymap.set("n", "<leader>e", "<cmd>Oil<CR>", { desc = "Open Oil Explorer" })
 		require("oil").setup(opts)
 	end,
