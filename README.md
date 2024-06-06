@@ -153,8 +153,6 @@ You can see where to find the config files in the [table above](#dependencies).
 - wlogout
     - fix issues with custom theme
     - complete functionality (hibernate, logout, sleep)
-- hyprland
-    - add keybindings for resizing windows
 - readme
     - add keybinding documentation
 - waybar
