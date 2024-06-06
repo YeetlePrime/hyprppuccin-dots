@@ -34,7 +34,7 @@
       "window-rewrite": {
         "title<.*youtube.*>": "<big></big>",
         "class<firefox>": "<big></big>",
-        "class<firefox>": "<big></big>",
+        "class<evince>": "<big></big>",
         "class<kitty>": "<big></big>",
         "class<kitty> title<nvim.*>": "<big></big>",
         "class<.*dolphin>": "<big>󰉋</big>",
