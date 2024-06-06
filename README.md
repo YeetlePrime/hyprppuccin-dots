@@ -151,7 +151,7 @@ You can see where to find the config files in the [table above](#dependencies).
 - rofi 
     - customize theme
 - wlogout
-    - customize theme
+    - fix issues with custom theme
     - complete functionality (hibernate, logout, sleep)
 - hyprland
     - add keybindings for resizing windows
@@ -159,6 +159,6 @@ You can see where to find the config files in the [table above](#dependencies).
     - add keybinding documentation
 - waybar
     - add network control utility (graphical)
-    - fix hover over workspace buttons
+    - fix active workspace styling for nvidia GPUs
 - dolphin/qt6ct/qt5ct
     - fix contrast for highlighted areas
