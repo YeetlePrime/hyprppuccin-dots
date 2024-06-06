@@ -1,5 +1,15 @@
 [Added Associations]
 application/pdf=evince-15.desktop;evince-14.desktop;evince-13.desktop;evince.desktop;
+application/x-cmakecache=nvim.desktop;vim.desktop;code.desktop;cmake-gui.desktop;
+text/markdown=nvim.desktop;vim.desktop;code.desktop;
+text/x-cmake=nvim.desktop;vim.desktop;code.desktop;
+text/x-csrc=nvim.desktop;vim.desktop;code.desktop;
+text/x-makefile=nvim.desktop;vim.desktop;code.desktop;
 
 [Default Applications]
 application/pdf=evince-15.desktop;
+application/x-cmakecache=nvim.desktop;
+text/markdown=nvim.desktop;
+text/x-cmake=nvim.desktop;
+text/x-csrc=nvim.desktop;
+text/x-makefile=nvim.desktop;
