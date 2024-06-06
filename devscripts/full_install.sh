@@ -1,8 +1,9 @@
+#!/bin/env bash
 
-#!/bin/env sh
+scriptdir="$(dirname "${0}")"
 
-scriptdir="$(dirname $0)"
+sudo "${scriptdir/install_pacman_dependencies.sh}"
+"$(scriptdir/install_aur_dependencies.sh)"
+sudo "${scriptdir/apply_config.sh}"
 
-sudo $scriptdir/install_pacman_dependencies.sh
-$scriptdir/install_aur_dependencies.sh
-sudo $scriptdir/apply_config.sh
+kbuildsycoca6 # rebuild system configuration

@@ -28,3 +28,6 @@ slurp
 wl-clipboard
 cliphist
 brightnessctl
+archlinux-xdg-menu
+evince
+

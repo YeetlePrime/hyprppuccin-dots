@@ -1,0 +1,5 @@
+[Added Associations]
+application/pdf=evince-15.desktop;evince-14.desktop;evince-13.desktop;evince.desktop;
+
+[Default Applications]
+application/pdf=evince-15.desktop;

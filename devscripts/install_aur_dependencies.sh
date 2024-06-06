@@ -1,8 +1,8 @@
-#!/bin/env sh
+#!/bin/bash
 install_yay () {
 	git clone https://aur.archlinux.org/yay.git
-	cd yay
-	makepkg -si;
+	cd yay || exit
+	makepkg -si
 	cd ..
 	rm -rf yay
 	yay -Y --gendb
@@ -26,9 +26,9 @@ then
 	done
 fi
 
-scriptdir="$(dirname $0)"
+scriptdir="$(dirname "${0}")"
 
 yay -Sy
-while read dependency || [[ -n $dependency ]]; do
+while read -r dependency || [[ -n $dependency ]]; do
 	yay -S --noconfirm --needed "${dependency}"
 done < "${scriptdir}/aur_dependencies.txt"
