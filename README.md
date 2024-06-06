@@ -98,7 +98,7 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
         </tr>
         <tr>
             <td>Sound</td> 
-            <td>pipewire{,-audio,-jack,-pulse} wireplumber pamixer pavucontrol-qtd></td> 
+            <td>pipewire{,-audio,-jack,-pulse} wireplumber pamixer pavucontrol-qt</td> 
             <td></td> 
             <td></td> 
         </tr>
