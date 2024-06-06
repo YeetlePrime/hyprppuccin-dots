@@ -160,3 +160,6 @@ You can see where to find the config files in the [table above](#dependencies).
     - fix active workspace styling for nvidia GPUs
 - dolphin/qt6ct/qt5ct
     - fix contrast for highlighted areas
+- nvim
+    - add treesitter support for latex files
+    - add latex previewer
