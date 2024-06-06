@@ -1,0 +1,5 @@
+[General]
+TerminalApplication=kitty
+
+[PreviewSettings]
+MaximumRemoteSize=0
