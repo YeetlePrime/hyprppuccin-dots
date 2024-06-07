@@ -1,5 +1,6 @@
 git
 base-devel
+go
 sddm
 waybar
 qt6ct
@@ -27,7 +28,9 @@ grim
 slurp
 wl-clipboard
 cliphist
+xdg-utils
 brightnessctl
 archlinux-xdg-menu
 evince
+xdg-desktop-portal-hyprland
 
