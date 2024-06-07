@@ -35,6 +35,7 @@
         "title<.*youtube.*>": "<big></big>",
         "class<firefox>": "<big></big>",
         "class<steam>": "<big></big>",
+        "class<steam_app_*>": "<big></big>",
         "class<discord>": "<big></big>",
         "class<evince>": "<big></big>",
         "class<kitty>": "<big></big>",
