@@ -37,6 +37,7 @@
         "class<steam>": "<big></big>",
         "class<steam_app_*>": "<big></big>",
         "class<discord>": "<big></big>",
+        "class<CurseForge>": "<big>󰢛</big>",
         "class<evince>": "<big></big>",
         "class<kitty>": "<big></big>",
         "class<kitty> title<nvim.*>": "<big></big>",

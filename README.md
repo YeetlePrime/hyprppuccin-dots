@@ -6,7 +6,6 @@
 These are my personal dotfiles for my personal daily driver linux machine with hyprppuccin mocha theme.
 The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots). The used sddm config is based on [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme).
 
-
 ## Dependencies
 <table>
     <thead>
@@ -145,6 +144,9 @@ You can see where to find the config files in the [table above](#dependencies).
 ![](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/empty.png)
 ![](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/single_window.png)
 ![](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/multiple_windows.png)
+
+## Keybindings
+You can customize the keybindings at `config/.config/hypr/keybindings.conf`
 
 
 ## TODOs
