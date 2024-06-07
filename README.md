@@ -163,3 +163,4 @@ You can see where to find the config files in the [table above](#dependencies).
 - nvim
     - add treesitter support for latex files
     - add latex previewer
+
