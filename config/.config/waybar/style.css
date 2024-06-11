@@ -24,14 +24,14 @@ tooltip {
     border-width: 0px;
 }
 
-.modules-right { 
+.modules-right {
     background: @surface0;
     margin: 5px 10px;
     border-radius: 9px;
     padding: 0px 9px;
 }
 
-.modules-left { 
+.modules-left {
     background: @surface0;
     margin: 5px 10px;
     border-radius: 9px;
@@ -134,24 +134,28 @@ label.module {
 
 #workspaces button.active {
     border-bottom-width: 1px;
+    border-bottom-style: solid;
     animation: none;
     transition: none;
 }
 
 
 #wireplumber {
-   color: @red; 
-}
-#network {
-   color: @peach; 
-}
-#backlight {
-   color: @yellow; 
-}
-#battery {
-   color: @green; 
-}
-#clock {
-   color: @mauve; 
+    color: @red;
 }
 
+#network {
+    color: @peach;
+}
+
+#backlight {
+    color: @yellow;
+}
+
+#battery {
+    color: @green;
+}
+
+#clock {
+    color: @mauve;
+}
