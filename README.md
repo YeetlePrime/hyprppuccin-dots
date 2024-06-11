@@ -159,7 +159,6 @@ You can customize the keybindings at `config/.config/hypr/keybindings.conf`
     - add keybinding documentation
 - waybar
     - add network control utility (graphical)
-    - fix active workspace styling for nvidia GPUs
 - dolphin/qt6ct/qt5ct
     - fix contrast for highlighted areas
 - nvim
