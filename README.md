@@ -3,10 +3,13 @@
     Hyprppuccin
 </h1>
 
-These are my personal dotfiles for my personal daily driver linux machine with hyprppuccin mocha theme.
-The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots). The used sddm config is based on [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme).
+These are my personal dotfiles for my personal daily driver linux
+machine with hyprppuccin mocha theme.
+The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](https://github.com/prasanthrangan/hyprdots).
+The used sddm config is based on [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme).
 
 ## Dependencies
+
 <table>
     <thead>
         <th>Type</th>
@@ -105,63 +108,83 @@ The config is inspired by the catppuccin-mocha hyprland theme from [hyprdots](ht
 
 </table>
 
-
 ## Installation
+
 ### 1. Clone the repository recursively
-Clone the repository with the command `git clone --recurse-submodules --remote-submodules https://github.com/YeetlePrime/hyprppuccin-dots`. You need to have git installed for that (`sudo pacman -S git`).  
-For the next steps I assume that you are in the basedirectory of this repository (`cd hyprppuccin-dots`).
+
+Clone the repository with the command
+`git clone --recurse-submodules --remote-submodules https://github.com/YeetlePrime/hyprppuccin-dots`.
+You need to have git installed for that (`sudo pacman -S git`).  
+For the next steps I assume that you are in the basedirectory of
+this repository (`cd hyprppuccin-dots`).
 
 ### 2. Install all required dependencies and the configuration
+
 #### Automatic installation
-The automatic installation process will download all dependencies that can be installed with pacman, then [yay](https://github.com/Jguer/yay) and all aur dependencies get installed.  
-Lastly all the configuration files from this repository are copied to their respective target directory.
-To install the whole configuration execute the full install script **without** root privileges `./devscripts/full_install.sh`.
+
+The automatic installation process will download all dependencies
+that can be installed with pacman, then [yay](https://github.com/Jguer/yay)
+and all aur dependencies get installed.  
+Lastly all the configuration files from this repository
+are copied to their respective target directory.
+To install the whole configuration execute the full install script
+**without** root privileges `./devscripts/full_install.sh`.
 
 > [!WARNING]
 > You have to manually install hyprland with [this guide](https://wiki.hyprland.org/Getting-Started/Installation/).
-> The hyprland packages are not maintaned by the creator and yet not installed by the installation script.
-> You may use `sudo pacman -S hyprland` or `yay -S hyprland-git` to install hyprland from the community-maintained packages.
-
+> The hyprland packages are not maintaned by the creator
+> and yet not installed by the installation script.
+> You may use `sudo pacman -S hyprland` or `yay -S hyprland-git`
+> to install hyprland from the community-maintained packages.  
 > [!CAUTION]
-> Your own configurations for the listed applications will get overwritten. Make sure to make backups of the mentioned files/directories. You don't wanna lose your stuff!
+> Your own configurations for the listed applications will get overwritten.
+> Make sure to make backups of the mentioned files/directories.
+> You don't wanna lose your stuff!
 
 #### Manual installation
+
 1. Install all the dependencies listed in `devscripts/pacman_dependencies.txt` and `devscripts/aur_dependencies.txt`.
 1. Install hyprland as described [here](https://wiki.hyprland.org/Getting-Started/Installation/).
 1. Copy all the configuration files to their respective target directory (for example by using the script config script `sudo ./devscripts/apply_config.sh`).
 
 ### 3, Enable sddm to start on boot
-If you want to use sddm as your Display/Login Manager, make sure that systemd starts it on boot. `systemctl enable sddm`
 
+If you want to use sddm as your Display/Login Manager,
+make sure that systemd starts it on boot. `systemctl enable sddm`
 
 ## Configuration
-If you want to further rice the config yourself, you can change the config files locally in your cloned directory and then execute the installation script `devscript/install.sh` (or with sudo priviliges, if you changed something for sddm).  
-Alternatively you can change the configs directly on your system. 
+
+If you want to further rice the config yourself,
+you can change the config files locally in your cloned directory
+and then execute the installation script `devscript/install.sh`
+(or with sudo priviliges, if you changed something for sddm).  
+Alternatively you can change the configs directly on your system.
 You can see where to find the config files in the [table above](#dependencies).
 
-
 ## Screenshots
-![](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/empty.png)
-![](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/single_window.png)
-![](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/multiple_windows.png)
+
+![empty](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/empty.png)
+![single](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/single_window.png)
+![multiple](https://github.com/YeetlePrime/hyprppuccin-dots/blob/main/assets/multiple_windows.png)
 
 ## Keybindings
+
 You can customize the keybindings at `config/.config/hypr/keybindings.conf`
 
-
 ## TODOs
-- rofi 
-    - customize theme
-- wlogout
-    - fix issues with custom theme
-    - complete functionality (hibernate, logout, sleep)
-- readme
-    - add keybinding documentation
-- waybar
-    - add network control utility (graphical)
-- dolphin/qt6ct/qt5ct
-    - fix contrast for highlighted areas
-- nvim
-    - add treesitter support for latex files
-    - add latex previewer
 
+- rofi  
+
+  - customize theme
+- wlogout
+  - fix issues with custom theme
+  - complete functionality (hibernate, logout, sleep)
+- readme
+  - add keybinding documentation
+- waybar
+  - add network control utility (graphical)
+- dolphin/qt6ct/qt5ct
+  - fix contrast for highlighted areas
+- nvim
+  - add treesitter support for latex files
+  - add latex previewer
