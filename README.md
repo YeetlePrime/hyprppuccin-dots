@@ -136,6 +136,7 @@ To install the whole configuration execute the full install script
 > and yet not installed by the installation script.
 > You may use `sudo pacman -S hyprland` or `yay -S hyprland-git`
 > to install hyprland from the community-maintained packages.  
+
 > [!CAUTION]
 > Your own configurations for the listed applications will get overwritten.
 > Make sure to make backups of the mentioned files/directories.
