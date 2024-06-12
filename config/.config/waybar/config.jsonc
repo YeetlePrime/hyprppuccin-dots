@@ -32,8 +32,11 @@
       "format-window-separator": " ",
       "window-rewrite-default": "<big></big>",
       "window-rewrite": {
+        // messengers/mailing
+        "class<thunderbird>": "",
+
         // browser
-        "title<.*youtube.*>": "<big></big>",
+        "class<firefox> title<.*youtube.*>": "<big></big>",
         "class<firefox>": "<big></big>",
 
         // file viewers
@@ -42,7 +45,7 @@
 
         // terminal stuff
         "class<kitty>": "<big></big>",
-        "class<kitty> title<nvim.*>": "<big></big>",
+        "class<kitty> title<n?vim.*>": "<big></big>",
 
         // control
         "class<pavucontrol.*>": "<big></big>",
