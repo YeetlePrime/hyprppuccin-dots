@@ -25,16 +25,10 @@ tooltip {
 }
 
 .modules-right {
-    background: @surface0;
-    margin: 5px 10px;
-    border-radius: 9px;
     padding: 0px 9px;
 }
 
 .modules-left {
-    background: @surface0;
-    margin: 5px 10px;
-    border-radius: 9px;
     padding: 0px 9px;
 }
 
@@ -46,8 +40,12 @@ tooltip {
 /* } */
 
 label.module {
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 0px 16px;
+    border-radius: 5px;
+}
+
+label.module:hover {
+    background: @crust;
 }
 
 #custom-power {
@@ -65,78 +63,74 @@ label.module {
     border-left: none;
 }
 
-#workspaces button {
+#workspaces button>* {
     padding: 0px 5px;
-    margin: 5px;
     border-radius: 0;
     animation: none;
+    transition: none;
+    border-bottom-width: 0;
+    border-style: none;
 }
 
-#workspaces button:nth-child(1) {
+#workspaces button:nth-child(1)>* {
     color: @red;
     border-bottom-color: @red;
-    border-bottom-width: 0;
 }
 
-#workspaces button:nth-child(2) {
+#workspaces button:nth-child(2)>* {
     color: @maroon;
     border-bottom-color: @maroon;
-    border-bottom-width: 0;
 }
 
-#workspaces button:nth-child(3) {
+#workspaces button:nth-child(3)>* {
     color: @peach;
     border-bottom-color: @peach;
-    border-bottom-width: 0;
 }
 
-#workspaces button:nth-child(4) {
+#workspaces button:nth-child(4)>* {
     color: @yellow;
     border-bottom-color: @yellow;
-    border-bottom-width: 0;
 }
 
-#workspaces button:nth-child(5) {
+#workspaces button:nth-child(5)>* {
     color: @green;
     border-bottom-color: @green;
-    border-bottom-width: 0;
 }
 
-#workspaces button:nth-child(6) {
+#workspaces button:nth-child(6)>* {
     color: @teal;
     border-bottom-color: @teal;
-    border-bottom-width: 0;
 }
 
-#workspaces button:nth-child(7) {
+#workspaces button:nth-child(7)>* {
     color: @sky;
     border-bottom-color: @sky;
-    border-bottom-width: 0;
 }
 
-#workspaces button:nth-child(8) {
+#workspaces button:nth-child(8)>* {
     color: @blue;
     border-bottom-color: @blue;
-    border-bottom-width: 0;
 }
 
-#workspaces button:nth-child(9) {
+#workspaces button:nth-child(9)>* {
     color: @lavender;
     border-bottom-color: @lavender;
-    border-bottom-width: 0;
 }
 
-#workspaces button:nth-child(10) {
+#workspaces button:nth-child(10)>* {
     color: @mauve;
     border-bottom-color: @mauve;
-    border-bottom-width: 0;
 }
 
-#workspaces button.active {
+#workspaces button.active>* {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     animation: none;
     transition: none;
+}
+
+#workspaces button:hover {
+    background: @crust;
 }
 
 
