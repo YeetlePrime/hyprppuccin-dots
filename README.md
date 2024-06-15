@@ -174,9 +174,6 @@ You can customize the keybindings at `config/.config/hypr/keybindings.conf`
 
 ## TODOs
 
-- rofi  
-
-  - customize theme
 - wlogout
   - fix issues with custom theme
   - complete functionality (hibernate, logout, sleep)

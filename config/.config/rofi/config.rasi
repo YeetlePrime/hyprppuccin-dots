@@ -14,11 +14,10 @@ configuration {
 
 @theme "~/.config/rofi/themes/Catppuccin-Mocha.rasi"
 
-
 // Main //
 window {
-    height:                      590px;
-    width:                       1140px;
+    height:                      600px;
+    width:                       900px;
     transparency:                "real";
     fullscreen:                  false;
     enabled:                     true;
@@ -30,62 +29,50 @@ window {
     border-color:                @main-br;
     background-color:            transparent;
 }
+
 mainbox {
     enabled:                     true;
     spacing:                     0px;
-    orientation:                 horizontal;
-    children:                    [  "inputbar" , "listbox" ];
-    background-color:            transparent;
-    background-image:            url("~/.config/swww/wall.blur", height);
+    padding:                     0px;
+    orientation:                 vertical;
+    children:                    [ "inputbar" , "listbox" ];
+    background-color:            @main-bg;
 }
 
 
 // Inputs //
 inputbar {
     enabled:                     true;
-    width:                       640px;
-    children:                    [ "mode-switcher" , "entry" ];
-    background-color:            transparent;
-    background-image:            url("~/.config/hypr/wallpapers/catMachup.jpg", height);
-}
-entry {
-    enabled:                     false;
-}
-
-
-// Modes //
-mode-switcher{
-    orientation:                 vertical;
-    enabled:                     true;
     spacing:                     0px;
-    width:                       68px;
-    padding:                     160px 10px 160px 10px;
-    spacing:                     25px;
-    background-color:            transparent;
-    background-image:            url("~/.config/swww/wall.blur", height);
-}
-button {
-    cursor:                      pointer;
-    vertical-align:              0.50;
-    horizontal-align:            0.45;
-    border-radius:               50px;
-    background-color:            @main-bg;
-    text-color:                  @main-fg;
-}
-button selected {
-    background-color:            @main-fg;
-    text-color:                  @main-bg;
+    padding:                     40px 80px;
+    children:                    [ "entry" ];
+    background-color:            @mantle;
+    border-color: @mauve;
+    border: 0px 0px 2px 0px;
+
 }
 
+entry {
+    enabled:                     true;
+    border-radius:               30px;
+    spacing:                     0px;
+    padding:                     20px;
+    text-color:                  @main-fg;
+    background-color:            @main-bg;
+}
 
 // Lists //
 listbox {
-    spacing:                     10px;
     padding:                     30px;
-    children:                    [ "listview" ];
+    spacing:                     0px;
+    orientation:                 horizontal;
+    children:                    [ "mode-switcher", "listview" ];
     background-color:            @main-bg;
 }
+
 listview {
+    padding:                     10px;
+    spacing:                     10px;
     enabled:                     true;
     columns:                     1;
     cycle:                       true;
@@ -100,32 +87,57 @@ listview {
     text-color:                  @main-fg;
 }
 
+mode-switcher {
+    orientation:                 vertical;
+    width:                       95px;
+    enabled:                     true;
+    padding:                     15px;
+    spacing:                     10px;
+    background-color:            transparent;
+}
+
+button {
+    cursor:                      pointer;
+    vertical-align:              0.50;
+    horizontal-align:            0.45;
+    border-radius:               10px;
+    background-color:            @main-bg;
+    text-color:                  @main-fg;
+}
+button selected {
+    background-color:            @main-fg;
+    text-color:                  @main-bg;
+}
 
 // Elements //
 element {
     enabled:                     true;
-    spacing:                     30px;
-    padding:                     8px;
-    border-radius:               20px;
+    spacing:                     20px;
+    padding:                     9px;
+    border-radius:               25px;
     cursor:                      pointer;
     background-color:            transparent;
     text-color:                  @main-fg;
 }
+
 @media(max-aspect-ratio: 1.8) {
     element {
         orientation:             vertical;
     }
 }
+
 element selected.normal {
     background-color:            @select-bg;
     text-color:                  @select-fg;
 }
+
 element-icon {
-    size:                        48px;
+    size:                        47px;
     cursor:                      inherit;
     background-color:            transparent;
     text-color:                  inherit;
 }
+
 element-text {
     vertical-align:              0.5;
     horizontal-align:            0.0;
