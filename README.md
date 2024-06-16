@@ -174,7 +174,9 @@ You can see where to find the config files in the [table above](#dependencies).
 
 ## Keybindings
 
-You can customize the keybindings at `config/.config/hypr/keybindings.conf`
+You can customize the keybindings at `config/.config/hypr/keybindings.conf`.  
+Some of the keybindings are inspired by vim motions
+(hjkl for resizing windows and swapping focus).
 
 <div align="center">
 <table>
