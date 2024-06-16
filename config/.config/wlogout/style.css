@@ -8,7 +8,7 @@ window {
 }
 
 button {
-    font-size: 200px;
+    font-size: 150px;
     padding: 20px;
     margin: 10px;
     text-decoration-color: #cdd6f4;
@@ -20,10 +20,11 @@ button {
     border-width: 2px;
 }
 
-button:focus, button:active, button:hover {
-    color:#11111b; 
-    text-decoration-color:#11111b; 
+button:focus,
+button:active,
+button:hover {
+    color: #11111b;
+    text-decoration-color: #11111b;
     background-color: #b4befe;
     outline-style: none;
 }
-
