@@ -291,7 +291,9 @@ You can customize the keybindings at `config/.config/hypr/keybindings.conf`
         </tr>
         <tr>
             <td>
-                <kbd>Super</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd>
+                <kbd>Super</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd>
+                <br>
+                <kbd>Super</kbd> + <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd>
             </td>
             <td>
                 Move window focus
@@ -307,7 +309,9 @@ You can customize the keybindings at `config/.config/hypr/keybindings.conf`
         </tr>
         <tr>
             <td>
-                <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd>
+                <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd>
+                <br>
+                <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd>
             </td>
             <td>
                 Resize windows
