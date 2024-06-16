@@ -185,7 +185,6 @@ You can customize the keybindings at `config/.config/hypr/keybindings.conf`
         </tr>
     </thead>
     <tbody>
-
         <tr>
             <td>
                 <kbd>Super</kbd> + <kbd>Q</kbd>
