@@ -51,6 +51,8 @@
         "class<pavucontrol.*>": "<big></big>",
 
         // games
+        "title<Battle.net>": "<big></big>",
+        "class<wow.exe>": "<big>󱤙</big>",
         "class<steam>": "<big></big>",
         "class<steam_app_.*>": "<big></big>",
         "class<lutris>": "<big>󱤙</big>",
