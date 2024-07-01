@@ -32,6 +32,9 @@
       "format-window-separator": " ",
       "window-rewrite-default": "<big></big>",
       "window-rewrite": {
+        // password managers
+        "class<.*KeePassXC>": "",
+
         // messengers/mailing
         "class<thunderbird>": "",
 
