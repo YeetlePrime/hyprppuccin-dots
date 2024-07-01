@@ -33,7 +33,7 @@
       "window-rewrite-default": "<big></big>",
       "window-rewrite": {
         // password managers
-        "class<.*KeePassXC>": "",
+        "class<.*KeePassXC>": "<big></big>",
 
         // messengers/mailing
         "class<thunderbird>": "",
