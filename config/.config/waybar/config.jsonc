@@ -61,6 +61,7 @@
         "class<lutris>": "<big>󱤙</big>",
         "class<mtga.*>": "<big>󰘸</big>",
         "class<discord>": "<big></big>",
+        "title<.*Discord.*>": "<big></big>",
         "class<CurseForge>": "<big>󰢛</big>",
         },
     },
