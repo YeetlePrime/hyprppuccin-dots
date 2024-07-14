@@ -367,3 +367,4 @@ Some of the keybindings are inspired by vim motions
 - nvim
   - add treesitter support for latex files
   - add latex previewer
+- add installation script for headless usage (without hyprland etc.)
