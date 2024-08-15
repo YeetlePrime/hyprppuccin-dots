@@ -360,8 +360,6 @@ Some of the keybindings are inspired by vim motions
 - wlogout
   - fix issues with custom theme
   - complete functionality (hibernate, logout, sleep)
-- waybar
-  - add network control utility (graphical)
 - dolphin/qt6ct/qt5ct
   - fix contrast for highlighted areas
 - nvim

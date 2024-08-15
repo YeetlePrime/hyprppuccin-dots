@@ -96,8 +96,9 @@
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "󰖪 ",
         "tooltip-format-disconnected": "Disconnected",
-        "format-alt": "<span> {bandwidthDownBytes}</span> <span> {bandwidthUpBytes}</span>",
+//        "format-alt": "<span> {bandwidthDownBytes}</span> <span> {bandwidthUpBytes}</span>",
         "interval": 2,
+        "on-click": "nm-connection-editor",
     },
 
     "backlight": {
