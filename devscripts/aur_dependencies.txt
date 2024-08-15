@@ -1,3 +1,2 @@
 wlogout
 swaylock-effects-git
-rofi-lbonn-wayland

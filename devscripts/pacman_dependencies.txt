@@ -34,4 +34,6 @@ brightnessctl
 archlinux-xdg-menu
 evince
 xdg-desktop-portal-hyprland
+nm-connection-editor
+rofi-wayland
 
