@@ -366,3 +366,5 @@ Some of the keybindings are inspired by vim motions
   - add treesitter support for latex files
   - add latex previewer
 - add installation script for headless usage (without hyprland etc.)
+- rofi
+  - fix theme (broke after update)
