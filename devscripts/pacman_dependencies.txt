@@ -1,4 +1,5 @@
 git
+devtools
 base-devel
 go
 sddm
@@ -36,4 +37,3 @@ evince
 xdg-desktop-portal-hyprland
 nm-connection-editor
 rofi-wayland
-
