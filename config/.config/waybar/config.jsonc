@@ -54,15 +54,16 @@
         "class<pavucontrol.*>": "<big></big>",
 
         // games
-        "title<Battle.net>": "<big></big>",
-        "class<wow.exe>": "<big>󱤙</big>",
         "class<steam>": "<big></big>",
         "class<steam_app_.*>": "<big></big>",
         "class<lutris>": "<big>󱤙</big>",
+        "title<Battle.net>": "<big></big>",
+        "class<wow.exe>": "<big>󱤙</big>",
+        "class<tsmapplication.*>": "<big></big>",
+        "class<CurseForge>": "<big>󰢛</big>",
         "class<mtga.*>": "<big>󰘸</big>",
         "class<discord>": "<big></big>",
         "title<.*Discord.*>": "<big></big>",
-        "class<CurseForge>": "<big>󰢛</big>",
         },
     },
 
